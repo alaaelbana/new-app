@@ -19,6 +19,10 @@ $(document).ready(function () {
     async function end() {
         screen.orientation.unlock()
     }
+    $('.aa').click(function () {
+        console.log("hi");
+        start();
+    });
     var fullscreentest = 0
     $('.plyr__controls>.plyr__control:last-child').click(function () {
         if (fullscreentest == 0) {
@@ -29,32 +33,24 @@ $(document).ready(function () {
             fullscreentest = 0
         }
     });
-    var touchtime = 0;
-    $(".plyr__poster").on("click", async function () {
-        if (touchtime == 0) {
-            // set first click
-            touchtime = new Date().getTime();
+    $('.plyr__control--overlaid').dblclick(function () {
+        if (fullscreentest == 0) {
+            $('.aa').click();
+            fullscreentest = 1
         } else {
-            // compare first click to this click and see if they occurred within double click threshold
-            if (((new Date().getTime()) - touchtime) < 800) {
-                // double click occurred
-                if (fullscreentest == 0) {
-                    start();
-                    console.log("hi");
-                    fullscreentest = 1
-                } else {
-                    console.log("bye");
-                    end();
-                    fullscreentest = 0
-                }
-                touchtime = 0;
-            } else {
-                // not a double click so set as a new first click
-                touchtime = new Date().getTime();
-            }
+            end();
+            fullscreentest = 0
         }
     });
-
+    $('.plyr__poster').dblclick(function () {
+        if (fullscreentest == 0) {
+            $('.aa').click();
+            fullscreentest = 1
+        } else {
+            end();
+            fullscreentest = 0
+        }
+    });
     if (document.addEventListener) {
         document.addEventListener('fullscreenchange', exitHandler, false);
         document.addEventListener('mozfullscreenchange', exitHandler, false);
