@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>profile</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Put your description here.">
+
+
+    <link rel="stylesheet" href="css/photoswipe.min.css">
+    <link rel="stylesheet" href="css/default-skin.min.css">
+    <link rel='stylesheet' href='css/plyr.css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/coustom.css">
+    <link rel="stylesheet" href="css/btn.css">
+</head>
+
+<body class="dark-mode">
+    <div class="loading"></div>
+    <div class="video-app">
+        <div class="dark-light">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+        </div>
+        <div class="header">
+            <div class="menu-circle"></div>
+            <div class="header-menu">
+                <a class="menu-link is-active" href="Home.html">Home</a>
+                <a class="menu-link notify" href="#">Jobs</a>
+                <a class="menu-link" href="#">Explore</a>
+
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="header-profile">
+                <div class="notification">
+                    <span class="notification-number">3</span>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.707 8.796c0 1.256.332 1.997 1.063 2.85.553.628.73 1.435.73 2.31 0 .874-.287 1.704-.863 2.378a4.537 4.537 0 01-2.9 1.413c-1.571.134-3.143.247-4.736.247-1.595 0-3.166-.068-4.737-.247a4.532 4.532 0 01-2.9-1.413 3.616 3.616 0 01-.864-2.378c0-.875.178-1.682.73-2.31.754-.854 1.064-1.594 1.064-2.85V8.37c0-1.682.42-2.781 1.283-3.858C7.861 2.942 9.919 2 11.956 2h.09c2.08 0 4.204.987 5.466 2.625.82 1.054 1.195 2.108 1.195 3.745v.426zM9.074 20.061c0-.504.462-.734.89-.833.5-.106 3.545-.106 4.045 0 .428.099.89.33.89.833-.025.48-.306.904-.695 1.174a3.635 3.635 0 01-1.713.731 3.795 3.795 0 01-1.008 0 3.618 3.618 0 01-1.714-.732c-.39-.269-.67-.694-.695-1.173z">
+                        </path>
+                    </svg>
+                </div>
+                <svg viewBox="0 0 512 512" fill="currentColor">
+                    <path
+                        d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z">
+                    </path>
+                </svg>
+                <img class="profile-img" src="images/headerimg.jpg" alt="">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="main-container">
+                <div class="profile">
+                    <img src="images/bg.jpg" alt="" class="profile-cover">
+                    <div class="profile-contact-info">
+                        <div class="profile-contact">
+                            <svg fill="currentColor" viewBox="0 0 512 512">
+                                <path
+                                    d="M10.69 95.16C80.96 154.66 204.26 259.36 240.5 292c4.87 4.4 10.08 6.65 15.5 6.65 5.4 0 10.62-2.22 15.47-6.6 36.27-32.68 159.57-137.4 229.84-196.9a10.66 10.66 0 001.5-14.72A42.36 42.36 0 00469.33 64H42.67A42.36 42.36 0 009.19 80.44a10.66 10.66 0 001.5 14.72z">
+                                </path>
+                                <path
+                                    d="M505.81 127.4a10.62 10.62 0 00-11.37 1.55C416.5 195 317.05 279.69 285.76 307.89c-17.56 15.85-41.94 15.85-59.54-.03-33.36-30.05-145.04-125-208.66-178.91A10.67 10.67 0 000 137.08v268.25A42.7 42.7 0 0042.67 448h426.66A42.7 42.7 0 00512 405.33V137.08c0-4.15-2.42-7.93-6.19-9.67z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="profile-contact">
+                            <svg viewBox="0 0 512 512" fill="currentColor">
+                                <path d="M453.3 85.3a69.3 69.3 0 11-138.6 0 69.3 69.3 0 01138.6 0zm0 0"></path>
+                                <path
+                                    d="M384 170.7a85.4 85.4 0 11.2-170.9 85.4 85.4 0 01-.2 170.9zM384 32a53.4 53.4 0 10.1 106.8A53.4 53.4 0 00384 32zm0 0M453.3 426.7a69.3 69.3 0 11-138.6 0 69.3 69.3 0 01138.6 0zm0 0">
+                                </path>
+                                <path
+                                    d="M384 512a85.4 85.4 0 11.2-170.8A85.4 85.4 0 01384 512zm0-138.7a53.4 53.4 0 10.1 106.8 53.4 53.4 0 00-.1-106.8zm0 0M154.7 256A69.3 69.3 0 1116 256a69.3 69.3 0 01138.7 0zm0 0">
+                                </path>
+                                <path
+                                    d="M85.3 341.3a85.4 85.4 0 11.2-170.8 85.4 85.4 0 01-.2 170.8zm0-138.6a53.4 53.4 0 10.2 106.8 53.4 53.4 0 00-.2-106.8zm0 0">
+                                </path>
+                                <path
+                                    d="M135.7 245.8a21.3 21.3 0 01-10.6-40L323.1 93a21.3 21.3 0 1121 37.1L146.3 243c-3.3 1.9-7 2.8-10.5 2.8zm0 0M333.6 421.8c-3.6 0-7.2-1-10.5-2.8L125 306a21.4 21.4 0 0121.2-37l198 112.8a21.4 21.4 0 01-10.7 39.9zm0 0">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="profile-contact">
+                            <svg viewBox="0 0 515.6 515.6" fill="currentColor">
+                                <path
+                                    d="M496.7 212.2a64.4 64.4 0 11-91.2 91.1 64.4 64.4 0 0191.2-91M303.3 212.2a64.4 64.4 0 11-91 91.1 64.4 64.4 0 0191-91M110 212.2A64.4 64.4 0 1119 303.3a64.4 64.4 0 0191.1-91">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <img class="profile-img" src="images/img1.jpg" alt="">
+                        <div class="profile_item_box">
+                            <div class="profile-item">
+                                <svg viewBox="0 0 469.33 469.33" fill="currentColor">
+                                    <path
+                                        d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                    </path>
+                                </svg>
+                                1,702
+                            </div>
+                            <div class="profile-item">
+                                <svg fill="currentColor" viewBox="0 0 469.33 469.33">
+                                    <path
+                                        d="M234.67 170.67c-35.31 0-64 28.69-64 64s28.69 64 64 64 64-28.7 64-64-28.7-64-64-64z">
+                                    </path>
+                                    <path
+                                        d="M234.67 74.67C128 74.67 36.9 141 0 234.67c36.9 93.65 128 160 234.67 160 106.77 0 197.76-66.35 234.66-160-36.9-93.66-127.89-160-234.66-160zm0 266.66c-58.88 0-106.67-47.78-106.67-106.66S175.79 128 234.67 128s106.66 47.79 106.66 106.67-47.78 106.66-106.66 106.66z">
+                                    </path>
+                                </svg>
+                                1,503
+                            </div>
+                        </div>
+
+                        <div class="profile_item_box">
+                            <div class="profile-item">
+                                <svg fill="currentColor" viewBox="0 0 475.43 475.43">
+                                    <path
+                                        d="M306.9 164.57l78.9-86.2a7.83 7.83 0 001.56-8.36 8.36 8.36 0 00-7.3-4.7h-253.4s-3.13 0-3.13.52v-9.4a26.12 26.12 0 0021.94-27.7A28.73 28.73 0 00117.26 0a29.78 29.78 0 00-29.78 28.73 30.82 30.82 0 0020.37 27.7v411.16a7.84 7.84 0 0015.68 0V263.84h256.52c3.2.2 6.17-1.7 7.31-4.7a8.36 8.36 0 00-1.56-8.36l-78.9-86.2z">
+                                    </path>
+                                </svg>
+                                Sep 21
+                            </div>
+                            <div class="profile-item">
+                                <svg viewBox="0 0 512 512" fill="currentColor">
+                                    <path d="M453.3 85.3a69.3 69.3 0 11-138.6 0 69.3 69.3 0 01138.6 0zm0 0"></path>
+                                    <path
+                                        d="M384 170.7a85.4 85.4 0 11.2-170.9 85.4 85.4 0 01-.2 170.9zM384 32a53.4 53.4 0 10.1 106.8A53.4 53.4 0 00384 32zm0 0M453.3 426.7a69.3 69.3 0 11-138.6 0 69.3 69.3 0 01138.6 0zm0 0">
+                                    </path>
+                                    <path
+                                        d="M384 512a85.4 85.4 0 11.2-170.8A85.4 85.4 0 01384 512zm0-138.7a53.4 53.4 0 10.1 106.8 53.4 53.4 0 00-.1-106.8zm0 0M154.7 256A69.3 69.3 0 1116 256a69.3 69.3 0 01138.7 0zm0 0">
+                                    </path>
+                                    <path
+                                        d="M85.3 341.3a85.4 85.4 0 11.2-170.8 85.4 85.4 0 01-.2 170.8zm0-138.6a53.4 53.4 0 10.2 106.8 53.4 53.4 0 00-.2-106.8zm0 0">
+                                    </path>
+                                    <path
+                                        d="M135.7 245.8a21.3 21.3 0 01-10.6-40L323.1 93a21.3 21.3 0 1121 37.1L146.3 243c-3.3 1.9-7 2.8-10.5 2.8zm0 0M333.6 421.8c-3.6 0-7.2-1-10.5-2.8L125 306a21.4 21.4 0 0121.2-37l198 112.8a21.4 21.4 0 01-10.7 39.9zm0 0">
+                                    </path>
+                                </svg>
+                                234
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="profile-menu">
+                        <div class="profile-avatar">
+                            <div class="profile-name">Phoebe Allison</div>
+                        </div>
+                        <div class="menu-items">
+                            <a href="#" class="profile-menu-link active main_page">Main</a>
+                            <a href="#" class="profile-menu-link about_page">About</a>
+                            <a href="#" class="profile-menu-link images_page">Images</a>
+                            <a href="#" class="profile-menu-link videos_page">Videos</a>
+                        </div>
+                        <div class="follow-buttons">
+                            <button class="follow">645,321</button>
+                            <button class="follow follow-option">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile_menu_mob">
+                    <div class="profile-name">Phoebe Allison</div>
+                    <div class="profile-work">Ui Designer</div>
+                    <div class="intro_box">
+                        <button class="bubbly-button">
+                            <svg style="width: 17px;transform: translate(-10px, 3px);" viewBox="0 0 469.33 469.33"
+                                fill="currentColor">
+                                <path
+                                    d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                </path>
+                            </svg>Add Friend</button>
+                        <button class="bubbly-button">
+                            <svg style="width: 14px;transform: translate(-10px, 3px);" viewBox="0 0 512 512"
+                                fill="currentColor">
+                                <path
+                                    d="M352 0H64C28.704 0 0 28.704 0 64v320a16.02 16.02 0 009.216 14.496A16.232 16.232 0 0016 400c3.68 0 7.328-1.248 10.24-3.712L117.792 320H352c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z">
+                                </path>
+                                <path
+                                    d="M464 128h-16v128c0 52.928-43.072 96-96 96H129.376L128 353.152V400c0 26.464 21.536 48 48 48h234.368l75.616 60.512A16.158 16.158 0 00496 512c2.336 0 4.704-.544 6.944-1.6A15.968 15.968 0 00512 496V176c0-26.464-21.536-48-48-48z">
+                                </path>
+                            </svg>Messages</button>
+                    </div>
+                    <div class="menu-items">
+                        <a href="#" class="profile-menu-link active main_page">Main</a>
+                        <a href="#" class="profile-menu-link about_page">About</a>
+                        <a href="#" class="profile-menu-link images_page">Images</a>
+                        <a href="#" class="profile-menu-link videos_page">Videos</a>
+                    </div>
+                </div>
+                <div class="profile_content trends" style="display: none;">
+                    <a href="#">
+                        <svg viewBox="0 0 56 50" fill="currentColor">
+                            <path
+                                d="M5.03 12h-5v38h56V12h-5zm31.999 20.262l-12.951 7.521a2.02 2.02 0 01-2.04.004 1.984 1.984 0 01-1.008-1.735V23.01c0-.724.377-1.372 1.008-1.735a2.047 2.047 0 012.04.003L37.029 28.8a1.983 1.983 0 011.001 1.731c0 .719-.374 1.366-1.001 1.731z"
+                                data-original="#000000" class="active-path"></path>
+                            <path d="M23.03 38.051v.004l12.994-7.524-12.951-7.525zM12.03 0h32v4h-32zM50.03 6h-44v4h44z"
+                                data-original="#000000" class="active-path"></path>
+                        </svg>
+                        See what's trending
+                    </a>
+                    <div class="follow-buttons">
+                        <button class="follow">Date Added</button>
+                        <button class="follow follow-option active">Most Popular</button>
+                    </div>
+                    <div class="play-all">
+                        <svg viewBox="0 0 494.942 494.942" fill="currentColor">
+                            <path d="M35.353 0l424.236 247.471L35.353 494.942z"></path>
+                        </svg>
+                        Play All
+                    </div>
+                </div>
+                <div class="content_box page_show">
+                    <div class="profile_content profile_all">
+                        <div class="timeline-left">
+                            <div class="intro_box intro_box_min">
+                                <div class="intro-title">
+                                    Introduction
+                                    <div class="copanie_more">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bio">
+                                    <p>Simplicity is the key to happiness.</p>
+                                </div>
+                                <div class="info">
+                                    <div class="info-item">
+                                        <svg viewBox="0 0 503.889 503.889" fill="currentColor">
+                                            <path
+                                                d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z">
+                                            </path>
+                                        </svg>
+                                        <p> Product Designer at <a href="#">Bravebist</a></p>
+                                    </div>
+                                    <div class="info-item">
+                                        <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                                            <path d="M9 22V12h6v10"></path>
+                                        </svg>
+                                        From <a href="#">Hanoi, Vietnam</a>
+                                    </div>
+                                    <div class="info-item">
+                                        <svg viewBox="0 0 512 512" fill="currentColor">
+                                            <path
+                                                d="M437 75C388.7 26.6 324.4 0 256 0S123.3 26.6 75 75C26.6 123.3 0 187.6 0 256s26.6 132.7 75 181c48.3 48.4 112.6 75 181 75s132.7-26.6 181-75c48.4-48.3 75-112.6 75-181s-26.6-132.7-75-181zM252.4 481.9c-52-.9-103.7-19.5-145.2-55.8L256 277.2l21.7 21.8a165.9 165.9 0 00-35.7 87c-3.5 30.5 0 63.3 10.4 95.9zM299 320.3l105.7 105.8a224.8 224.8 0 01-121.3 54.1C262 419.5 268 360.3 299 320.3zm21.2-21.2c40-31 99.2-37 160-15.6A224.8 224.8 0 01426 404.8zM482 252.4a231.7 231.7 0 00-96-10.4 165.9 165.9 0 00-87 35.7L277.3 256l148.9-148.8c36.3 41.5 55 93.2 55.8 145.2zm-290.2-39.5c-40 31-99.2 37-160 15.6A224.8 224.8 0 0186 107.2zm-84.5-127a224.8 224.8 0 01121.3-54.1C250 92.5 244 151.7 213 191.7zM270 126c3.5-30.5 0-63.3-10.4-95.9 52 .9 103.7 19.5 145.2 55.8L256 234.8 234.3 213a165.9 165.9 0 0035.7-87zM30 259.6a242 242 0 0072.7 11.7c7.8 0 15.6-.5 23.2-1.3a165.9 165.9 0 0087-35.7l21.8 21.7L85.9 404.8a225.3 225.3 0 01-55.8-145.2z">
+                                            </path>
+                                        </svg>
+                                        Player name <a href="#">Quan Ha</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro_box" style="margin-top: 30px;">
+                                <div class="intro-title">
+                                    Skills
+                                    <div class="copanie_more">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <ul class="skills">
+                                    <li class="skills_item">HTML</li>
+                                    <li class="skills_item">CSS</li>
+                                    <li class="skills_item">jQuery</li>
+                                    <li class="skills_item">Angular</li>
+                                    <li class="skills_item">Bootstrap</li>
+                                    <li class="skills_item">Adobe illustrator</li>
+                                    <li class="skills_item">Angular.js</li>
+                                    <li class="skills_item">Frameworks</li>
+                                    <li class="skills_item">Git</li>
+                                    <li class="skills_item">Adobe Photoshop</li>
+                                    <li class="skills_item">JavaScript</li>
+                                    <li class="skills_item">Adobe Indesign</li>
+                                    <li class="skills_item">Github</li>
+                                    <li class="skills_item">HTML5</li>
+                                    <li class="skills_item">CSS3</li>
+                                    <li class="skills_item">Sass</li>
+                                    <li class="skills_item">Bootstrap 4</li>
+                                    <div class="loadMoreskills">+</div>
+                                </ul>
+                            </div>
+                            <div class="intro_box" style="margin-top: 30px;">
+                                <div class="intro-title">
+                                    Hobbies
+                                    <div class="copanie_more">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <ul class="hobbies">
+                                    <li class="skills_item"><img class="hobbie" src="images/icons/paint.png"
+                                            alt="">painting
+                                    </li>
+                                    <li class="skills_item"><img class="hobbie" src="images/icons/dumbbell.png"
+                                            alt="">workout</li>
+                                    <li class="skills_item"><img class="hobbie" src="images/icons/guitar.png"
+                                            alt="">playing
+                                        Music</li>
+                                    <li class="skills_item"><img class="hobbie" src="images/icons/gamepad.png" alt="">
+                                        games
+                                    </li>
+                                    <li class="skills_item"><img class="hobbie" src="images/icons/camera.png"
+                                            alt="">photograph</li>
+                                    <li class="skills_item"><img class="hobbie" src="images/icons/bake.png"
+                                            alt="">Cooking
+                                    </li>
+                                    <li class="skills_item"><img class="hobbie" src="images/icons/coding.png"
+                                            alt="">Codeing
+                                    </li>
+                                    <li class="skills_item"><img class="hobbie" src="images/icons/karaoke.png"
+                                            alt="">singing</li>
+                                    <div class="loadMorehobbies">+</div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="center-padding">
+                            <div class="what-do">
+                                <div class="what-do-user-name">
+                                    <img src="images/profileimg.webp" alt="">
+                                    <input type="text" placeholder="What's on your min, 3laa?">
+                                </div>
+                                <hr>
+                                <div class="what-do-links">
+
+                                    <div>
+                                        <img src="images/home icons/file.png" alt="">
+                                        <span>Post</span>
+                                    </div>
+
+                                    <div>
+                                        <img src="images/home icons/image.png" alt="">
+                                        <span>Photo</span>
+                                    </div>
+                                    <div>
+                                        <img src="images/home icons/video (2).png" alt="">
+                                        <span>video</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="post-userName">
+                                    <div class="post-userName1">
+                                        <div class="post-user-box">
+                                            <div class="profile_pic">
+                                                <img src="https://img.freepik.com/Ffree-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                                    alt="">
+                                            </div>
+                                            <div>
+                                                <h2><a href="profile.html">3laa elbana</a></h2>
+                                                <span>January 25, 2022</span>
+                                            </div>
+                                            <i class="fa fa-ellipsis-h" style="font-size: 18px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post_bg">
+                                    <div class="post-text">
+                                        <p> look at this beautiful img </p>
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post_img_box">
+                                            <img class="post_img" src="images/img1.jpg" alt="">
+                                            <img class="post_img" src="images/img2.jpg" alt="">
+                                            <img class="post_img" src="images/img4.jpg" alt="">
+                                            <img class="post_img" src="images/img2.jpg" alt="">
+                                            <img class="post_img" src="images/img1.jpg" alt="">
+                                            <img class="post_img" src="images/img2.jpg" alt="">
+                                            <div class="seemore_box">
+                                                <p>+<span class="morenum"></span><span class="moretext"> More
+                                                        Images</span>
+                                                </p>
+                                            </div>
+                                            <div class="zoom_in_box">
+                                                <img src="images/img1.jpg" alt="">
+                                                <img src="images/img4.jpg" alt="">
+                                                <img src="images/img2.jpg" alt="">
+                                                <img src="images/img4.jpg" alt="">
+                                                <img src="images/img2.jpg" alt="">
+                                                <img src="images/img1.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="reactions_num">
+                                            <div class="reactions_box reactions_show_btn">
+                                                <i class="fas fa-thumbtack" style="font-size: 16px;"></i>
+                                                <input class="d-none react_check" type="checkbox">
+                                            </div>
+                                            <div class="reactions_box">
+                                                <span>582</span>
+                                                <i class="far fa-eye" style="font-size: 16px;"></i>
+                                            </div>
+                                            <button class="heart-button reactions_box ">
+                                                <span class="love_num">120</span>
+                                                <div class="heart_box">
+                                                    <div class="heart-flip" style="padding: 0;"></div>
+
+                                                </div>
+                                            </button>
+                                            <div class="reactions_box">
+                                                <span>68</span>
+                                                <i class="far fa-comment-alt" style="font-size: 16px;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" post-statistics">
+                                        <div>
+                                            <i class="fas fa-heart"></i>
+                                            <span class="love_num">120</span>
+                                        </div>
+                                        <div>
+                                            <i class="far fa-comment-alt"></i>
+                                            <span>68</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="reactions">
+                                        <button class="heart-button reactions_box">
+                                            <div class="heart-flip" style="padding: 0;"></div>
+                                            <span>Love<span>d</span></span>
+                                            <input class="react_pls d-none" type="checkbox">
+                                        </button>
+                                        <div class="reactions_box">
+                                            <i class="far fa-comment-alt" style="font-size: 18px;"></i>
+                                            <span>Comment</span>
+                                        </div>
+                                        <div class="reactions_box">
+                                            <i class="fas fa-share" style="font-size: 18px;"></i>
+                                            <span>share</span>
+                                        </div>
+                                    </div>
+                                    <div class="what-do-user-name">
+                                        <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1425878822.1641168000"
+                                            alt="">
+                                        <input type="text" placeholder="Write a comment…">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="post-userName">
+                                    <div class="post-userName1">
+                                        <div class="post-user-box">
+                                            <div class="profile_pic">
+                                                <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                                    alt="">
+                                            </div>
+                                            <div>
+                                                <h2>3laa elbana</h2>
+                                                <span>January 25, 2022</span>
+                                            </div>
+                                            <i class="fa fa-ellipsis-h" style="font-size: 18px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post_bg">
+                                    <div class="post-text">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post_img_box">
+                                            <img class="post_img" src="images/img2.jpg" alt="">
+                                            <img class="post_img" src="images/img4.jpg" alt="">
+                                            <img class="post_img" src="images/img1.jpg" alt="">
+                                            <div class="seemore_box">
+                                                <p>+<span class="morenum"></span><span class="moretext"> More
+                                                        Images</span>
+                                                </p>
+                                            </div>
+                                            <div class="zoom_in_box">
+                                                <img src="images/img2.jpg" alt="">
+                                                <img src="images/img4.jpg" alt="">
+                                                <img src="images/img1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="reactions_num">
+                                            <div class="reactions_box reactions_show_btn">
+                                                <i class="fas fa-thumbtack" style="font-size: 16px;"></i>
+                                                <input class="d-none react_check" type="checkbox">
+                                            </div>
+                                            <div class="reactions_box">
+                                                <span>582</span>
+                                                <i class="far fa-eye" style="font-size: 16px;"></i>
+                                            </div>
+                                            <button class="heart-button reactions_box ">
+                                                <span class="love_num">45</span>
+                                                <div class="heart_box">
+                                                    <div class="heart-flip" style="padding: 0;"></div>
+
+                                                </div>
+                                            </button>
+                                            <div class="reactions_box">
+                                                <span>68</span>
+                                                <i class="far fa-comment-alt" style="font-size: 16px;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" post-statistics">
+                                        <div>
+                                            <i class="fas fa-heart"></i>
+                                            <span class="love_num">45</span>
+                                        </div>
+                                        <div>
+                                            <i class="far fa-comment-alt"></i>
+                                            <span>68</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="reactions">
+                                        <button class="heart-button reactions_box">
+                                            <div class="heart-flip" style="padding: 0;"></div>
+                                            <span>Love<span>d</span></span>
+                                            <input class="d-none react_pls" type="checkbox">
+                                        </button>
+                                        <div class="reactions_box">
+                                            <i class="far fa-comment-alt" style="font-size: 18px;"></i>
+                                            <span>Comment</span>
+                                        </div>
+                                        <div class="reactions_box">
+                                            <i class="fas fa-share" style="font-size: 18px;"></i>
+                                            <span>share</span>
+                                        </div>
+                                    </div>
+                                    <div class="what-do-user-name">
+                                        <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1425878822.1641168000"
+                                            alt="">
+                                        <input type="text" placeholder="Write a comment…">
+                                    </div>
+                                    <div class="what-do-user-name">
+                                        <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1425878822.1641168000"
+                                            alt="">
+                                        <input type="text" placeholder="Write a comment…">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="post-userName">
+                                    <div class="post-userName1">
+                                        <div class="post-user-box">
+                                            <div class="profile_pic">
+                                                <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                                    alt="">
+                                            </div>
+                                            <div>
+                                                <h2>3laa elbana</h2>
+                                                <span>January 25, 2022</span>
+                                            </div>
+                                            <i class="fa fa-ellipsis-h" style="font-size: 18px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post_bg">
+                                    <div class="post-text">
+                                        <p> look at this beautiful video </p>
+                                    </div>
+                                    <div class="video_box">
+                                        <video controls crossorigin playsinline
+                                            poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+                                            class="player">
+                                            <!-- Video files -->
+                                            <source src="NieR Automata.mp4" type="video/mp4" size="576">
+                                            <source
+                                                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                                                type="video/mp4" size="720">
+                                            <source
+                                                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                                                type="video/mp4" size="1080">
+                                            <source
+                                                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4"
+                                                type="video/mp4" size="1440">
+
+                                            <!-- Caption files -->
+                                            <track kind="captions" label="English" srclang="en"
+                                                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                                                default>
+                                            <track kind="captions" label="Français" srclang="fr"
+                                                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+                                        </video>
+                                    </div>
+                                    <div class="post-content">
+
+                                        <div class="reactions_num">
+                                            <div class="reactions_box reactions_show_btn">
+                                                <i class="fas fa-thumbtack" style="font-size: 16px;"></i>
+                                                <input class="d-none react_check" type="checkbox">
+                                            </div>
+                                            <div class="reactions_box">
+                                                <span>582</span>
+                                                <i class="far fa-eye" style="font-size: 16px;"></i>
+                                            </div>
+                                            <button class="heart-button reactions_box ">
+                                                <span class="love_num">189</span>
+                                                <div class="heart_box">
+                                                    <div class="heart-flip" style="padding: 0;"></div>
+
+                                                </div>
+                                            </button>
+                                            <div class="reactions_box">
+                                                <span>68</span>
+                                                <i class="far fa-comment-alt" style="font-size: 16px;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" post-statistics">
+                                        <div>
+                                            <i class="fas fa-heart"></i>
+                                            <span class="love_num">189</span>
+                                        </div>
+                                        <div>
+                                            <i class="far fa-comment-alt"></i>
+                                            <span>68</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="reactions">
+                                        <button class="heart-button reactions_box">
+                                            <div class="heart-flip" style="padding: 0;"></div>
+                                            <span>Love<span>d</span></span>
+                                            <input class="d-none react_pls" type="checkbox">
+                                        </button>
+                                        <div class="reactions_box">
+                                            <i class="far fa-comment-alt" style="font-size: 18px;"></i>
+                                            <span>Comment</span>
+                                        </div>
+                                        <div class="reactions_box">
+                                            <i class="fas fa-share" style="font-size: 18px;"></i>
+                                            <span>share</span>
+                                        </div>
+                                    </div>
+                                    <div class="what-do-user-name">
+                                        <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1425878822.1641168000"
+                                            alt="">
+                                        <input type="text" placeholder="Write a comment…">
+                                    </div>
+                                    <div class="what-do-user-name">
+                                        <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.1425878822.1641168000"
+                                            alt="">
+                                        <input type="text" placeholder="Write a comment…">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-left add_friend_box">
+                            <div class="intro_box" style="padding: 40px 10px;">
+                                <button class="bubbly-button">
+                                    <svg style="width: 17px;transform: translate(-10px, 3px);"
+                                        viewBox="0 0 469.33 469.33" fill="currentColor">
+                                        <path
+                                            d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                        </path>
+                                    </svg>Add Friend</button>
+                                <button class="bubbly-button">
+                                    <svg style="width: 14px;transform: translate(-10px, 3px);" viewBox="0 0 512 512"
+                                        fill="currentColor">
+                                        <path
+                                            d="M352 0H64C28.704 0 0 28.704 0 64v320a16.02 16.02 0 009.216 14.496A16.232 16.232 0 0016 400c3.68 0 7.328-1.248 10.24-3.712L117.792 320H352c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z">
+                                        </path>
+                                        <path
+                                            d="M464 128h-16v128c0 52.928-43.072 96-96 96H129.376L128 353.152V400c0 26.464 21.536 48 48 48h234.368l75.616 60.512A16.158 16.158 0 00496 512c2.336 0 4.704-.544 6.944-1.6A15.968 15.968 0 00512 496V176c0-26.464-21.536-48-48-48z">
+                                        </path>
+                                    </svg>Messages</button>
+                            </div>
+                            <div class="intro_box" style="margin-top: 30px;">
+                                <div class="intro-title people_mayknow">
+                                    people you may know <div class="copanie_more">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="add-friend">
+                                    <div class="friend-img">
+                                        <img src="images/headerimg.jpg" alt="">
+                                    </div>
+                                    <div class="friend-info">
+                                        <div class="friend-name">Phoebe Allison</div>
+                                        <button class="bubbly-button">
+                                            <svg style="width: 14px;transform: translate(-10px, 3px);"
+                                                viewBox="0 0 469.33 469.33" fill="currentColor">
+                                                <path
+                                                    d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                                </path>
+                                            </svg>Add Friend</button>
+                                    </div>
+                                </div>
+                                <div class="add-friend">
+                                    <div class="friend-img">
+                                        <img src="images/img2.jpg" alt="">
+                                    </div>
+                                    <div class=" friend-info">
+                                        <div class="friend-name">Allison Phoebe</div>
+                                        <button class="bubbly-button">
+                                            <svg style="width: 14px;transform: translate(-10px, 3px);"
+                                                viewBox="0 0 469.33 469.33" fill="currentColor">
+                                                <path
+                                                    d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                                </path>
+                                            </svg>Add Friend</button>
+                                    </div>
+                                </div>
+                                <div class="add-friend">
+                                    <div class="friend-img">
+                                        <img src="images/img3.jpg" alt="">
+                                    </div>
+                                    <div class=" friend-info">
+                                        <div class="friend-name">Phoebe Allison</div>
+                                        <button class="bubbly-button">
+                                            <svg style="width: 14px;transform: translate(-10px, 3px);"
+                                                viewBox="0 0 469.33 469.33" fill="currentColor">
+                                                <path
+                                                    d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                                </path>
+                                            </svg>Add Friend</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro_box" style="margin-top: 30px;">
+                                <div class="intro-title people_mayknow">
+                                    Other people <div class="copanie_more">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="add-friend">
+                                    <div class="friend-img">
+                                        <img src="images/headerimg.jpg" alt="">
+                                    </div>
+                                    <div class="friend-info">
+                                        <div class="friend-name">Phoebe Allison</div>
+                                        <button class="bubbly-button">
+                                            <svg style="width: 14px;transform: translate(-10px, 3px);"
+                                                viewBox="0 0 469.33 469.33" fill="currentColor">
+                                                <path
+                                                    d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                                </path>
+                                            </svg>Add Friend</button>
+                                    </div>
+                                </div>
+                                <div class="add-friend">
+                                    <div class="friend-img">
+                                        <img src="images/img2.jpg" alt="">
+                                    </div>
+                                    <div class=" friend-info">
+                                        <div class="friend-name">Allison Phoebe</div>
+                                        <button class="bubbly-button">
+                                            <svg style="width: 14px;transform: translate(-10px, 3px);"
+                                                viewBox="0 0 469.33 469.33" fill="currentColor">
+                                                <path
+                                                    d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                                </path>
+                                            </svg>Add Friend</button>
+                                    </div>
+                                </div>
+                                <div class="add-friend">
+                                    <div class="friend-img">
+                                        <img src="images/img3.jpg" alt="">
+                                    </div>
+                                    <div class=" friend-info">
+                                        <div class="friend-name">Phoebe Allison</div>
+                                        <button class="bubbly-button">
+                                            <svg style="width: 14px;transform: translate(-10px, 3px);"
+                                                viewBox="0 0 469.33 469.33" fill="currentColor">
+                                                <path
+                                                    d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z">
+                                                </path>
+                                            </svg>Add Friend</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="images_box">
+                    <div class="profile_content images d-none">
+                        <div class="image">
+                            <img src="images/img4.jpg" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="images/img1.jpg" alt="">
+
+                        </div>
+                        <div class="image">
+                            <img src="images/img2.jpg" alt="">
+
+                        </div>
+                        <div class="image">
+                            <img src="images/img3.jpg" alt="">
+
+                        </div>
+                        <div class="image">
+                            <img src="images/bg.jpg" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="images/profileimg.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="videos_box">
+                    <div class="videos d-none">
+
+                    </div>
+                </div>
+                <div class="load-more">
+                    <svg id="me" xmlns="http://w3.org/2000/svg" viewBox="0 0 341.333 341.333" fill="currentColor">
+                        <path
+                            d="M341.227 149.333V0l-50.133 50.133C260.267 19.2 217.707 0 170.56 0 76.267 0 .107 76.373.107 170.667s76.16 170.667 170.453 170.667c79.467 0 146.027-54.4 164.907-128h-44.373c-17.6 49.707-64.747 85.333-120.533 85.333-70.72 0-128-57.28-128-128s57.28-128 128-128c35.307 0 66.987 14.72 90.133 37.867l-68.8 68.8h149.333z">
+                        </path>
+                    </svg>
+                    Load More
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pswp">
+
+        <!-- Background of PhotoSwipe. 
+           It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <div class="pswp__container" style="transform: translate3d(0px, 0px, 0px);">
+                <!-- don't modify these 3 pswp__item elements, data is added later on -->
+                <div class="pswp__item" style="display: block; transform: translate3d(-1720px, 0px, 0px);">
+                </div>
+                <div class="pswp__item" style="transform: translate3d(0px, 0px, 0px);">
+                </div>
+                <div class="pswp__item" style="display: block; transform: translate3d(1720px, 0px, 0px);">
+                </div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--fit pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter">1 / 2</div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/modernizr-3.6.0.min.js"></script>
+    <script src="js/photoswipe.min.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src='js/plyr.js'></script>
+    <script src="js/btn.js"></script>
+    <script src="js/coustom.js"></script>
+    <script src="js/profile.js"></script>
+
+
+</body>
+
+</html>

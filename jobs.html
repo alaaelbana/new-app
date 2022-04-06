@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home page</title>
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" />
+    <link rel="apple-touch-icon" type="image/png" href="" />
+    <meta name="apple-mobile-web-app-title" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/coustom.css">
+    <link rel="stylesheet" href="css/jobs.css">
+</head>
+
+<body>
+    <div class="loading"></div>
+    <div class="dark-light">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+    </div>
+    <div class="app">
+        <div class="header">
+            <div class="menu-circle"></div>
+            <div class="header-menu">
+                <a class="menu-link is-active" href="#">Home</a>
+                <a class="menu-link notify" href="#">Jobs</a>
+                <a class="menu-link" href="#">Explore</a>
+
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="header-profile">
+                <div class="notification">
+                    <span class="notification-number">3</span>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.707 8.796c0 1.256.332 1.997 1.063 2.85.553.628.73 1.435.73 2.31 0 .874-.287 1.704-.863 2.378a4.537 4.537 0 01-2.9 1.413c-1.571.134-3.143.247-4.736.247-1.595 0-3.166-.068-4.737-.247a4.532 4.532 0 01-2.9-1.413 3.616 3.616 0 01-.864-2.378c0-.875.178-1.682.73-2.31.754-.854 1.064-1.594 1.064-2.85V8.37c0-1.682.42-2.781 1.283-3.858C7.861 2.942 9.919 2 11.956 2h.09c2.08 0 4.204.987 5.466 2.625.82 1.054 1.195 2.108 1.195 3.745v.426zM9.074 20.061c0-.504.462-.734.89-.833.5-.106 3.545-.106 4.045 0 .428.099.89.33.89.833-.025.48-.306.904-.695 1.174a3.635 3.635 0 01-1.713.731 3.795 3.795 0 01-1.008 0 3.618 3.618 0 01-1.714-.732c-.39-.269-.67-.694-.695-1.173z">
+                        </path>
+                    </svg>
+                </div>
+                <svg viewBox="0 0 512 512" fill="currentColor">
+                    <path
+                        d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z">
+                    </path>
+                </svg>
+                <img class="profile-img"
+                    src="https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+                    alt="">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="left-side">
+                <div class="filters_title">
+                    <i class="fa-solid fa-filter"></i> Filters
+                </div>
+                <div class="search_job">
+                    <input type="text" placeholder="Search here...">
+                </div>
+                <ul class="filters_box">
+                    <li class="filter">
+                        <div class="filter_name filter_bg">
+                            <i class="fa-solid fa-earth-africa"></i> Country
+                        </div>
+                        <ul class="filter_dropdown dropdown_show">
+                            <li>Egypt</li>
+                            <li>Egypt</li>
+                            <li>Egypt</li>
+                            <li>Egypt</li>
+                            <li>Egypt</li>
+                        </ul>
+                    </li>
+                    <li class="filter">
+                        <div class="filter_name">
+                            <i class="fa-solid fa-city"></i> City
+                        </div>
+                        <ul class="filter_dropdown">
+                            <li>Cairo</li>
+                            <li>Alexandria</li>
+                            <li>Monufia</li>
+                        </ul>
+                    </li>
+                    <li class="filter">
+                        <div class="filter_name">
+                            <i class="fa-solid fa-certificate"></i> Experience
+                        </div>
+                        <ul class="filter_dropdown">
+                            <li>0-1 Exp</li>
+                            <li>1-3 Exp</li>
+                            <li>3-5 Exp</li>
+                        </ul>
+                    </li>
+                    <li class="filter">
+                        <div class="filter_name">
+                            <i class="fa-brands fa-black-tie"></i> Career Level
+                        </div>
+                        <ul class="filter_dropdown">
+                            <li>Fresh Graduate</li>
+                            <li>Entry Level</li>
+                            <li>Mid Career</li>
+                            <li>Professional</li>
+                        </ul>
+                    </li>
+                    <li class="filter">
+                        <div class="filter_name">
+                            <i class="fa-solid fa-business-time"></i> Employment Type
+                        </div>
+                        <ul class="filter_dropdown">
+                            <li>Full Time</li>
+                            <li>Part Time</li>
+                            <li>From Home</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="main-container">
+                <div class="jop_box">
+                    <h2>front end developer needed <span><i class="fa-regular fa-clock"></i>4 hours ago</span></h2>
+                    <h3><i class="fa-regular fa-building"></i>Any Company <span><i class="fa-solid fa-location-dot"></i>
+                            Cairo</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum. Est ex modi officiis
+                        ullam accusamus corrupti delectus similique eligendi eaque nemo, voluptatum sapiente repellat,
+                        eveniet officia! Sed, possimus nesciunt.</p>
+                    <ul>
+                        <li><span>*</span>5 vacant jobs</li>
+                        <li><span>*</span>1-3 Yrs of Exp</li>
+                        <li><span>*</span>Junior</li>
+                        <li><span>*</span>Full Time</li>
+                    </ul>
+                    <img class="job_logo"
+                        src="https://images.wuzzuf-data.net/files/company_logo/Digi-Visions-Egypt-64939-1630367670.jpg"
+                        alt="">
+                </div>
+                <div class="jop_box">
+                    <h2>front end developer needed <span><i class="fa-regular fa-clock"></i>4 hours ago</span></h2>
+                    <h3><i class="fa-regular fa-building"></i>Any Company <span><i class="fa-solid fa-location-dot"></i>
+                            Cairo</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum. Est ex modi officiis
+                        ullam accusamus corrupti delectus similique eligendi eaque nemo, voluptatum sapiente repellat,
+                        eveniet officia! Sed, possimus nesciunt.</p>
+                    <ul>
+                        <li><span>*</span>5 vacant jobs</li>
+                        <li><span>*</span>1-3 Yrs of Exp</li>
+                        <li><span>*</span>Junior</li>
+                        <li><span>*</span>Full Time</li>
+                    </ul>
+                    <img class="job_logo"
+                        src="https://images.wuzzuf-data.net/files/company_logo/Digi-Visions-Egypt-64939-1630367670.jpg"
+                        alt="">
+                </div>
+                <div class="jop_box">
+                    <h2>front end developer needed <span><i class="fa-regular fa-clock"></i>4 hours ago</span></h2>
+                    <h3><i class="fa-regular fa-building"></i>Any Company <span><i class="fa-solid fa-location-dot"></i>
+                            Cairo</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum. Est ex modi officiis
+                        ullam accusamus corrupti delectus similique eligendi eaque nemo, voluptatum sapiente repellat,
+                        eveniet officia! Sed, possimus nesciunt.</p>
+                    <ul>
+                        <li><span>*</span>5 vacant jobs</li>
+                        <li><span>*</span>1-3 Yrs of Exp</li>
+                        <li><span>*</span>Junior</li>
+                        <li><span>*</span>Full Time</li>
+                    </ul>
+                    <img class="job_logo"
+                        src="https://images.wuzzuf-data.net/files/company_logo/Digi-Visions-Egypt-64939-1630367670.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="left-side companie_side">
+                <div class="filters_title">
+                    <i class="fa-regular fa-building"></i> famous companies
+                </div>
+                <div class="companies_box">
+                    <div class="companie">
+                        <div class="companie_img"><img src="images/logo3.png" alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+
+                    </div>
+                    <div class="companie">
+                        <div class="companie_img"><img
+                                src="data:image/webp;base64,UklGRq4EAABXRUJQVlA4TKEEAAAvd8AdAGejoI0kZZ/Rv9q7581bUOO2baQkPTz2/6/sqFFt2zYS73d5+0/qcv4VuW3bZJ2Slu+wa/fgEzRzgvaelxjT30eMnNiOz/SEBwQBfAQgEIFngjp3hBCBCIDae4/jKmBdECsESBMQEcGwbNtO2yjMzMzMnOv5j8yRnp6g9NWI/jtw28aRZETb73z93iBd27aojQ6LvlWKUuJCFjTFxtjN1IlhMOd/ACkwjrP9nIj+M3DbSJErHcPyI/CPeIJFvZDnuAZ0pAIBxrxeZYl9qxiW0KTUO9vhXhbMZAC50QM9Xq/Eh16EVyk6scGzLAwoKXT5DNmdIwsLjIQw1tNA+yi/dPJqTkG41EAYZG5O3KlqErFkinZUom9O7ENqy8me0pnus8nJpFRG1xvttkTPElmwQonOo6aoBdR5L2XflqIGENJMWZnUORSPgTUs61pU33VnhHik3ZLImqVbTpnsGfBro8y7jOCQETLFOwD+hnsYOqaFTOkGiar8kdnR2db90yYhZGoBVHjxTiv1m635gCG+aab+BnQBHxlUwpRZmqozDDxDkxRDg4jywzoGvEavkVBmDg6pfI5OwiedYjLxJXQwfxc8krqMrcFj5vL7KlKhU9Zf1lWWlTLZruFaScFOnhD7/4Zr6ny61P/YrimONrYxLomTqqenwizCI7YGKT/BMsM6aQs408AewH65WC7IreVR+ffxqbEMcAxrMbZWwE4qcNFxlHqd8HfInerawsWVoyhdsX5pUlehnOQO6pQh8WQuRn1521VkCcfL/sVKR2p2AJhRDnI6Vb1hju4yTtaMjUNM5+H8TXpemaOWnsK22nQLYLYA/EarRwq8nLyCX2Pc1TG8vLfwsjIs2E3Ds2PUnrcOENsFpNMKgZBzA2Fz18beAcAcwjwE28ucY6dx3jz9Yak7/SAQiLT8dAzU5DUJegtueBzF/iiy4+arVMPFU9sdwSJJTvbtMVSriwkMzMKYloUcA5vreMvGVfX6HWBGTl4LkG4aFJZJ2U+BArJrHezu7WDFrI3dlmVBXd0z+86g3+glD5S9tW8LXSRtqHGnEsHQ/n0OEX7kU+G1wSjvT1WwBa/rJa44rbsKKEJDDsB2pLMuP4RMAtm4GwiOXage+Hz+eUUPIJnSOarDjTpHszY0NCoNAwazB6rBXeQ++M2gF/iQaSjv3+/mkHZDi7GZd/kpsE5uBgKoawxkF+rO8xNn2qYLnMizsT2Db8iBwEw09kh8rfbxYRjOg3Q7owVADwDiIfGGojUXiUVCo/lDjhEslB8VL6L3+NeE/hZF50IscZYCsXOWOs9yEMIJpABYAiDmDCSK7pME2HCAsUUsEx2RN4KaaqHWAOq43eZNpMqoKkqNrVopKatYZGUDLci+kBq/SXKRyQ3dKc4SfbOnClinKk4VYzrSQColB1KhqQarGD38NgNpq0i1YdVGykdncyOTHeWNlDnZO1I0BW+YxldhSvwu0TvIDisFwNl4vp4Hmgi8vG0aQNE9uW8Ifp9sKOItkNdqBaAkOcApqyL2pNagVX2QnEJUqoofqiip1PoPmc6UavpnLiNyQ/G/8gAA"
+                                alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+                    </div>
+                    <div class="companie">
+                        <div class="companie_img"><img src="images/download.jpg" alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+                    </div>
+                    <div class="companie">
+                        <div class="companie_img"><img src="images/logo3.png" alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+                    </div>
+                    <div class="companie">
+                        <div class="companie_img"><img
+                                src="data:image/webp;base64,UklGRq4EAABXRUJQVlA4TKEEAAAvd8AdAGejoI0kZZ/Rv9q7581bUOO2baQkPTz2/6/sqFFt2zYS73d5+0/qcv4VuW3bZJ2Slu+wa/fgEzRzgvaelxjT30eMnNiOz/SEBwQBfAQgEIFngjp3hBCBCIDae4/jKmBdECsESBMQEcGwbNtO2yjMzMzMnOv5j8yRnp6g9NWI/jtw28aRZETb73z93iBd27aojQ6LvlWKUuJCFjTFxtjN1IlhMOd/ACkwjrP9nIj+M3DbSJErHcPyI/CPeIJFvZDnuAZ0pAIBxrxeZYl9qxiW0KTUO9vhXhbMZAC50QM9Xq/Eh16EVyk6scGzLAwoKXT5DNmdIwsLjIQw1tNA+yi/dPJqTkG41EAYZG5O3KlqErFkinZUom9O7ENqy8me0pnus8nJpFRG1xvttkTPElmwQonOo6aoBdR5L2XflqIGENJMWZnUORSPgTUs61pU33VnhHik3ZLImqVbTpnsGfBro8y7jOCQETLFOwD+hnsYOqaFTOkGiar8kdnR2db90yYhZGoBVHjxTiv1m635gCG+aab+BnQBHxlUwpRZmqozDDxDkxRDg4jywzoGvEavkVBmDg6pfI5OwiedYjLxJXQwfxc8krqMrcFj5vL7KlKhU9Zf1lWWlTLZruFaScFOnhD7/4Zr6ny61P/YrimONrYxLomTqqenwizCI7YGKT/BMsM6aQs408AewH65WC7IreVR+ffxqbEMcAxrMbZWwE4qcNFxlHqd8HfInerawsWVoyhdsX5pUlehnOQO6pQh8WQuRn1521VkCcfL/sVKR2p2AJhRDnI6Vb1hju4yTtaMjUNM5+H8TXpemaOWnsK22nQLYLYA/EarRwq8nLyCX2Pc1TG8vLfwsjIs2E3Ds2PUnrcOENsFpNMKgZBzA2Fz18beAcAcwjwE28ucY6dx3jz9Yak7/SAQiLT8dAzU5DUJegtueBzF/iiy4+arVMPFU9sdwSJJTvbtMVSriwkMzMKYloUcA5vreMvGVfX6HWBGTl4LkG4aFJZJ2U+BArJrHezu7WDFrI3dlmVBXd0z+86g3+glD5S9tW8LXSRtqHGnEsHQ/n0OEX7kU+G1wSjvT1WwBa/rJa44rbsKKEJDDsB2pLMuP4RMAtm4GwiOXage+Hz+eUUPIJnSOarDjTpHszY0NCoNAwazB6rBXeQ++M2gF/iQaSjv3+/mkHZDi7GZd/kpsE5uBgKoawxkF+rO8xNn2qYLnMizsT2Db8iBwEw09kh8rfbxYRjOg3Q7owVADwDiIfGGojUXiUVCo/lDjhEslB8VL6L3+NeE/hZF50IscZYCsXOWOs9yEMIJpABYAiDmDCSK7pME2HCAsUUsEx2RN4KaaqHWAOq43eZNpMqoKkqNrVopKatYZGUDLci+kBq/SXKRyQ3dKc4SfbOnClinKk4VYzrSQColB1KhqQarGD38NgNpq0i1YdVGykdncyOTHeWNlDnZO1I0BW+YxldhSvwu0TvIDisFwNl4vp4Hmgi8vG0aQNE9uW8Ifp9sKOItkNdqBaAkOcApqyL2pNagVX2QnEJUqoofqiip1PoPmc6UavpnLiNyQ/G/8gAA"
+                                alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+                    </div>
+                    <div class="companie">
+                        <div class="companie_img"><img src="images/download.jpg" alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+                    </div>
+                    <div class="companie">
+                        <div class="companie_img"><img src="images/logo3.png" alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+                    </div>
+                    <div class="companie">
+                        <div class="companie_img"><img
+                                src="data:image/webp;base64,UklGRq4EAABXRUJQVlA4TKEEAAAvd8AdAGejoI0kZZ/Rv9q7581bUOO2baQkPTz2/6/sqFFt2zYS73d5+0/qcv4VuW3bZJ2Slu+wa/fgEzRzgvaelxjT30eMnNiOz/SEBwQBfAQgEIFngjp3hBCBCIDae4/jKmBdECsESBMQEcGwbNtO2yjMzMzMnOv5j8yRnp6g9NWI/jtw28aRZETb73z93iBd27aojQ6LvlWKUuJCFjTFxtjN1IlhMOd/ACkwjrP9nIj+M3DbSJErHcPyI/CPeIJFvZDnuAZ0pAIBxrxeZYl9qxiW0KTUO9vhXhbMZAC50QM9Xq/Eh16EVyk6scGzLAwoKXT5DNmdIwsLjIQw1tNA+yi/dPJqTkG41EAYZG5O3KlqErFkinZUom9O7ENqy8me0pnus8nJpFRG1xvttkTPElmwQonOo6aoBdR5L2XflqIGENJMWZnUORSPgTUs61pU33VnhHik3ZLImqVbTpnsGfBro8y7jOCQETLFOwD+hnsYOqaFTOkGiar8kdnR2db90yYhZGoBVHjxTiv1m635gCG+aab+BnQBHxlUwpRZmqozDDxDkxRDg4jywzoGvEavkVBmDg6pfI5OwiedYjLxJXQwfxc8krqMrcFj5vL7KlKhU9Zf1lWWlTLZruFaScFOnhD7/4Zr6ny61P/YrimONrYxLomTqqenwizCI7YGKT/BMsM6aQs408AewH65WC7IreVR+ffxqbEMcAxrMbZWwE4qcNFxlHqd8HfInerawsWVoyhdsX5pUlehnOQO6pQh8WQuRn1521VkCcfL/sVKR2p2AJhRDnI6Vb1hju4yTtaMjUNM5+H8TXpemaOWnsK22nQLYLYA/EarRwq8nLyCX2Pc1TG8vLfwsjIs2E3Ds2PUnrcOENsFpNMKgZBzA2Fz18beAcAcwjwE28ucY6dx3jz9Yak7/SAQiLT8dAzU5DUJegtueBzF/iiy4+arVMPFU9sdwSJJTvbtMVSriwkMzMKYloUcA5vreMvGVfX6HWBGTl4LkG4aFJZJ2U+BArJrHezu7WDFrI3dlmVBXd0z+86g3+glD5S9tW8LXSRtqHGnEsHQ/n0OEX7kU+G1wSjvT1WwBa/rJa44rbsKKEJDDsB2pLMuP4RMAtm4GwiOXage+Hz+eUUPIJnSOarDjTpHszY0NCoNAwazB6rBXeQ++M2gF/iQaSjv3+/mkHZDi7GZd/kpsE5uBgKoawxkF+rO8xNn2qYLnMizsT2Db8iBwEw09kh8rfbxYRjOg3Q7owVADwDiIfGGojUXiUVCo/lDjhEslB8VL6L3+NeE/hZF50IscZYCsXOWOs9yEMIJpABYAiDmDCSK7pME2HCAsUUsEx2RN4KaaqHWAOq43eZNpMqoKkqNrVopKatYZGUDLci+kBq/SXKRyQ3dKc4SfbOnClinKk4VYzrSQColB1KhqQarGD38NgNpq0i1YdVGykdncyOTHeWNlDnZO1I0BW+YxldhSvwu0TvIDisFwNl4vp4Hmgi8vG0aQNE9uW8Ifp9sKOItkNdqBaAkOcApqyL2pNagVX2QnEJUqoofqiip1PoPmc6UavpnLiNyQ/G/8gAA"
+                                alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+                    </div>
+                    <div class="companie">
+                        <div class="companie_img"><img src="images/download.jpg" alt=""></div>
+                        <div class="companie_text">
+                            <h5>famous companie1
+                                <div class="copanie_more">
+                                    <span></span>
+                                </div>
+                            </h5>
+                            <h6>5 jobs available</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-app"></div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/modernizr-3.6.0.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/coustom.js"></script>
+    <script>
+        const toggleButton = document.querySelector('.dark-light');
+
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+
+        $(".filters_box .filter .filter_name").click(function () {
+
+            $(this).parent().find('.filter_dropdown').slideToggle().parent().siblings().find('.filter_dropdown').slideUp();
+            $(this).toggleClass("filter_bg").parent().siblings().find('.filter_name').removeClass("filter_bg")
+        });
+        if ($(".main-container .jop_box").length < 3) {
+            $(".main-container").addClass("main-container-empty");
+        }
+    </script>
+</body>
+
+</html>

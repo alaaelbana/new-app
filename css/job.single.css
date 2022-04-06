@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    padding: 27px 30px;
+}
+
+.job_single_box {
+    padding-right: 370px;
+}
+
+.jox_title_box, .job_details {
+    background-color: #202020;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.job_details {
+    margin-bottom: 0;
+    padding-bottom: 35px;
+}
+
+.jox_title_box .company_logo .job_logo {
+    right: 30px;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    border-radius: 14px;
+}
+
+.jox_title_box h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #4284e4;
+    max-width: 80%;
+}
+
+.jox_title_box h3, .job_details h3 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    border-left: 1px solid #4284e4;
+    padding: 3px 7px;
+}
+
+.jox_title_box h4 {
+    font-size: 14px;
+    margin: 5px 0 5px;
+    color: #c4c4c4;
+}
+
+.jox_title_box h4 i {
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+.jox_title_box h4 span {
+    color: rgb(139 139 139);
+    margin-left: 5px;
+
+}
+
+.jox_title_box ul li {
+    margin-bottom: 5px;
+    color: #c4c4c4;
+    padding-left: 5px;
+}
+
+.jox_title_box ul li i {
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+.jox_title_box ul li svg {
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+.jox_title_box p {
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+.jox_title_box .job_btns {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.jox_title_box .job_btns button {
+    background-color: rgb(55 55 55);
+    border: 1px solid transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    min-width: 30px;
+}
+
+.jox_title_box .job_btns button i, .jox_title_box .job_btns button svg {
+    font-size: 14px;
+}
+
+.jox_title_box .job_btns .apply {
+    padding: 6px 28px;
+    background-color: rgb(58 92 180);
+}
+
+.jox_title_box .job_btns .apply i {
+    margin-right: 4px;
+}
+
+.jox_title_box .job_skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0px;
+    padding: 0;
+}
+
+.jox_title_box .job_skills li {
+    color: #f9fafb;
+    padding: 5px 9px;
+    border-radius: 9px;
+    border-bottom: 1px solid #3d5ba8;
+    font-size: 14px;
+}
+
+.job_details ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job_details ul li {
+    line-height: 1.6;
+    font-size: 15px;
+    padding-left: 5px;
+    width: 50%;
+}
+
+.job_details ul li span {
+    color: #9e9e9e;
+}
+
+@media screen and (max-width: 1350px) {
+    .content-wrapper {
+        padding: 25px;
+    }
+
+    .job_single_box {
+        padding-right: 300px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .job_single_box {
+        padding-right: 0px;
+    }
+
+    .jox_title_box h1 {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-wrapper {
+        padding: 15px;
+    }
+
+    .jox_title_box, .job_details {
+        padding: 15px;
+    }
+
+    .jox_title_box h1 {
+        max-width: 72%;
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+
+    .jox_title_box h3, .job_details h3 {
+        font-size: 16px;
+    }
+
+    .jox_title_box p {
+        font-size: 14px;
+    }
+
+    .jox_title_box .job_skills li {
+        font-size: 12px;
+    }
+
+    .job_details ul li {
+        width: 100%;
+        font-size: 14px;
+    }
+}

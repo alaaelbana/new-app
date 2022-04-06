@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Plyr Demo</title>
+    <link rel='stylesheet' href='https://cdn.plyr.io/3.4.6/plyr.css'>
+
+    <style>
+        /* This is purely for the demo */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .plyr {
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .plyr__captions {
+            display: none !important;
+        }
+
+        .plyr__controls {
+            opacity: 0;
+        }
+
+        .plyr:hover .plyr__controls {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video controls crossorigin playsinline
+            poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" class="player">
+            <!-- Video files -->
+            <source src="NieR Automata.mp4" type="video/mp4" size="1080">
+        </video>
+    </div>
+    <div class="container">
+        <video controls crossorigin playsinline
+            poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" class="player">
+            <!-- Video files -->
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4"
+                size="576">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4"
+                size="720">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4"
+                size="1080">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4"
+                size="1440">
+
+            <!-- Caption files -->
+            <track kind="captions" label="English" srclang="en"
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default>
+            <track kind="captions" label="Français" srclang="fr"
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+        </video>
+    </div>
+    <div class="container">
+        <video controls crossorigin playsinline
+            poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" class="player">
+            <!-- Video files -->
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4"
+                size="576">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4"
+                size="720">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4"
+                size="1080">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4"
+                size="1440">
+
+            <!-- Caption files -->
+            <track kind="captions" label="English" srclang="en"
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default>
+            <track kind="captions" label="Français" srclang="fr"
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+        </video>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src='https://cdn.plyr.io/3.4.6/plyr.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const players = Plyr.setup('.player', {
+                seekTime: 5,
+                autopause: true,
+            });
+            $('.plyr__control--overlaid').click(function () {
+                $(this).parent().find(".plyr__controls>button:first-child").focus();
+            });
+            $('.plyr__poster').click(function () {
+                $(this).parent().parent().find(".plyr__controls>button:first-child").focus();
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

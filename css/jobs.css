@@ -1,0 +1,362 @@
+li {
+    list-style: none;
+}
+
+.main-container {
+    overflow: auto;
+    padding-right: 330px;
+    padding-bottom: 20px;
+}
+
+.main-container-empty {
+    padding-right: 340px;
+}
+
+.left-side {
+    flex-basis: 300px;
+    background: var(--content-bg-color);
+    color: var(--theme-color);
+    margin: 20px 20px 10px;
+    border-radius: 8px;
+    border: none;
+    padding: 0px;
+}
+
+.left-side:hover {
+    padding: 0px;
+
+}
+
+.filters_title {
+    border-bottom: 1px solid #323232;
+    padding: 20px 10px 15px;
+    margin: 0 10px 15px;
+    border-radius: 5px;
+    color: #adadad;
+    font-size: 16px;
+}
+
+.search_job {
+    padding: 0 15px 10px;
+}
+
+.search_job input {
+    padding: 10px 0px 10px 15px;
+    background: #2c2c2c;
+    border-radius: 6px;
+    color: var(--theme-color);
+    border: none;
+    width: 100%;
+}
+
+.filters_box {
+    padding: 0;
+    margin: 0;
+}
+
+.filters_box .filter {
+    padding: 0 15px;
+}
+
+.filters_box .filter .filter_name {
+    background: #2c2c2c;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    color: #b8babe;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .7s;
+}
+
+.filters_box .filter .filter_bg {
+    color: #fff;
+}
+
+.filters_box .filter .filter_name i {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.filters_box .filter .filter_dropdown {
+    display: none;
+    padding: 0;
+    background: #242424;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #b8babe;
+    font-size: 14px;
+
+}
+
+.filters_box .filter .filter_dropdown li {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    border-radius: 8px;
+}
+
+.filters_box .filter .filter_dropdown li:last-child {
+    border: none;
+}
+
+.filters_box .filter .dropdown_show {
+    display: block;
+}
+
+.jop_box {
+    background-color: var(--content-bg-color);
+    color: var(--theme-color);
+    padding: 30px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.jop_box i {
+    font-size: 11px;
+    margin-right: 3px;
+}
+
+.jop_box h2 {
+    margin: 0;
+    letter-spacing: 0px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #518bd3;
+    font-size: 18px;
+    margin-left: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 5px;
+    max-width: 82%;
+}
+
+.jop_box h2 span {
+    font-size: 12px;
+    color: #818181;
+    display: inline-block;
+}
+
+.jop_box h3 {
+    margin: 0;
+    color: rgb(139 139 139);
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.jop_box h3 span {
+    color: #626262;
+    margin-left: 5px;
+}
+
+.jop_box h3 span i {
+    margin-right: 1px;
+}
+
+.jop_box p {
+    font-size: 13px;
+    line-height: 19px;
+    color: rgb(193 190 190);
+    margin: 11px 3px 15px;
+    width: 80%;
+}
+
+.jop_box ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.jop_box ul li {
+    font-size: 11px;
+    padding: 2px 5px;
+    border-bottom: 1px solid #6a68cd9e;
+    border-radius: 16px;
+    font-weight: 400;
+    padding-left: 16px !important;
+    position: relative;
+}
+
+.jop_box ul li span {
+    color: rgb(86 149 225 / 51%);
+    position: absolute;
+    font-size: 14px;
+    left: 5px;
+    top: 3px;
+}
+
+.jop_box .job_logo {
+    right: 30px;
+    position: absolute;
+    top: 26px;
+    width: 90px;
+    border-radius: 14px;
+}
+
+.companie_side {
+    position: fixed;
+    right: 0;
+    height: calc(100% - 90px);
+    width: 300px;
+}
+
+.companie_side .companies_box {
+    overflow: hidden;
+    height: calc(100% - 70px);
+}
+
+.companie_side .companies_box:hover {
+    overflow: auto;
+}
+
+.companie_side .companie {
+    display: flex;
+    padding: 0px 18px 15px;
+}
+
+.companie_side .companie .companie_img {
+    width: 55px;
+    height: 55px;
+}
+
+.companie_side .companie .companie_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: contain;
+    border: 2px solid #333;
+}
+
+.companie_side .companie .companie_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.companie_side .companie .companie_text h5 {
+    color: rgb(193 190 190);
+    margin: 0 0px 5px;
+    font-size: 13px;
+    position: relative;
+}
+
+.companie_side .companie .companie_text h5 .copanie_more {
+    transition: .5s;
+    position: absolute;
+    display: inline-block;
+    margin-left: 25px;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.companie_side .companie .companie_text h5 .copanie_more:hover {
+    background-color: #3d3d3d;
+}
+
+.companie_side .companie .companie_text h5 .copanie_more span {
+    background-color: rgb(193 190 190);
+    box-shadow: -5px 0 0 0, 5px 0 0 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.6;
+    display: flex;
+}
+
+.companie_side .companie .companie_text h6 {
+    color: rgb(151 151 151);
+    margin: 0;
+}
+
+.main-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .jop_box p {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .left-side {
+        flex-basis: 270px;
+    }
+
+    .main-container {
+        padding-right: 300px;
+    }
+
+    .jop_box {
+        padding: 20px;
+    }
+
+    .jop_box h2 {
+        margin-left: 0;
+    }
+
+    .jop_box .job_logo {
+        width: 75px;
+        top: 20px;
+        right: 20px;
+    }
+
+    .companie_side {
+        width: 270px;
+    }
+
+    .companie_side .companie {
+        padding: 0px 12px 15px;
+    }
+
+    .companie_side .companie .companie_text h5 .copanie_more {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .companie_side {
+        display: none;
+    }
+
+    .main-container {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .main-container {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main-container {
+        padding: 0 15px;
+    }
+
+    .jop_box {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .jop_box .job_logo {
+        display: none;
+    }
+
+    .jop_box p {
+        width: 100%;
+    }
+
+    .jop_box ul li {
+        font-size: 10px;
+    }
+
+}

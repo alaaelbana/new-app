@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>CodePen - A Pen by Dmitry Semenov</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
+
+    <style>
+        .hi {
+            display: flex;
+            margin: 10px;
+            gap: 5px;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+            display: none;
+        }
+
+        .pswp__img {
+            display: block;
+        }
+
+        .pswp {
+            width: 80%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="hi">
+        <img class="post_img" src="images/img1.jpg " style="display: block;height: 100px;width: 100px;" alt="">
+        <img class="post_img" src="images/img2.jpg " style="display: block;height: 100px;width: 100px;" alt="">
+        <img class="post_img" src="images/img4.jpg " style="display: block;height: 100px;width: 100px;" alt="">
+        <div class="post">
+            <img src="images/img1.jpg" alt="">
+            <img src="images/img2.jpg" alt="">
+            <img src="images/img4.jpg" alt="">
+
+        </div>
+    </div>
+    <div class="hi">
+        <img class="post_img" src="images/img3.jpg " style="display: block;height: 100px;width: 100px;" alt="">
+        <div class="post">
+            <img src="images/img3.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="pswp">
+
+        <!-- Background of PhotoSwipe. 
+           It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <div class="pswp__container" style="transform: translate3d(0px, 0px, 0px);">
+                <!-- don't modify these 3 pswp__item elements, data is added later on -->
+                <div class="pswp__item" style="display: block; transform: translate3d(-1720px, 0px, 0px);"></div>
+                <div class="pswp__item" style="transform: translate3d(0px, 0px, 0px);">
+                </div>
+                <div class="pswp__item" style="display: block; transform: translate3d(1720px, 0px, 0px);">
+                </div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--fit pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter">1 / 2</div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
+    <script>
+
+
+        var imgsrc
+        var imgcheck
+        var imgche
+        $('.post_img').click(function () {
+            extraArr = [];
+
+            for (let i = 0; i < $(this).parent().find('.post img').length; i++) {
+                imgsrc = $(this).parent().find(`.post img:nth-child(${i + 1})`).attr('src');
+                imgcheck = $(this).parent().find(`.post img:nth-child(${i + 1})`).width();
+                imgche = $(this).parent().find(`.post img:nth-child(${i + 1})`).height();
+                extraArr.push({
+                    src: imgsrc,
+                    w: imgcheck * 1.5,
+                    h: imgche * 1.5
+                })
+
+            }
+            openPhotoSwipe();
+        });
+        $('.post_img:nth-child(2)').click(function () {
+            $(".pswp__button--arrow--right").click()
+        });
+
+        var openPhotoSwipe = function () {
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+
+            // build items array
+
+            var items = [
+                ...extraArr
+            ];
+
+            // define options (if needed)
+            var options = {
+                // history & focus options are disabled on CodePen        
+                history: false,
+                focus: false,
+                closeOnScroll: false,
+                showAnimationDuration: 0,
+                hideAnimationDuration: 0
+            };
+
+            var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+        };
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

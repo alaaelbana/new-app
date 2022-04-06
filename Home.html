@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home page</title>
+    <meta name="description" content="Put your description here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" />
+    <link rel="apple-touch-icon" type="image/png" href="" />
+    <meta name="apple-mobile-web-app-title" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="css/photoswipe.min.css">
+    <link rel="stylesheet" href="css/default-skin.min.css">
+    <link rel='stylesheet' href='css/plyr.css'>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/coustom.css">
+</head>
+
+<body>
+    <div class="loading"></div>
+    <div class="dark-light">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+    </div>
+    <div class="app">
+        <div class="header">
+            <div class="menu-circle"></div>
+            <div class="header-menu">
+                <a class="menu-link is-active" href="#">Home</a>
+                <a class="menu-link notify" href="#">Jobs</a>
+                <a class="menu-link" href="#">Explore</a>
+
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="header-profile">
+                <div class="notification">
+                    <span class="notification-number">3</span>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.707 8.796c0 1.256.332 1.997 1.063 2.85.553.628.73 1.435.73 2.31 0 .874-.287 1.704-.863 2.378a4.537 4.537 0 01-2.9 1.413c-1.571.134-3.143.247-4.736.247-1.595 0-3.166-.068-4.737-.247a4.532 4.532 0 01-2.9-1.413 3.616 3.616 0 01-.864-2.378c0-.875.178-1.682.73-2.31.754-.854 1.064-1.594 1.064-2.85V8.37c0-1.682.42-2.781 1.283-3.858C7.861 2.942 9.919 2 11.956 2h.09c2.08 0 4.204.987 5.466 2.625.82 1.054 1.195 2.108 1.195 3.745v.426zM9.074 20.061c0-.504.462-.734.89-.833.5-.106 3.545-.106 4.045 0 .428.099.89.33.89.833-.025.48-.306.904-.695 1.174a3.635 3.635 0 01-1.713.731 3.795 3.795 0 01-1.008 0 3.618 3.618 0 01-1.714-.732c-.39-.269-.67-.694-.695-1.173z">
+                        </path>
+                    </svg>
+                </div>
+                <svg viewBox="0 0 512 512" fill="currentColor">
+                    <path
+                        d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z">
+                    </path>
+                </svg>
+                <img class="profile-img" src="images/headerimg.jpg" alt="">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="left-side left_side_box">
+                <div class="side-wrapper">
+                    <div class="side-title">Pages</div>
+                    <div class="side-menu">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            Profile
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-briefcase"></i>
+                            Jobs
+                            <span class="notification-number updates">3</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-user-friends"></i>
+                            Frinds
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-user-plus"></i>
+                            Following
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-star"></i>
+                            Favourites
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">Notifications</div>
+                    <div class="side-menu">
+                        <a href="#">
+                            <svg viewBox="0 0 512 512" fill="currentColor">
+                                <path
+                                    d="M352 0H64C28.704 0 0 28.704 0 64v320a16.02 16.02 0 009.216 14.496A16.232 16.232 0 0016 400c3.68 0 7.328-1.248 10.24-3.712L117.792 320H352c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z">
+                                </path>
+                                <path
+                                    d="M464 128h-16v128c0 52.928-43.072 96-96 96H129.376L128 353.152V400c0 26.464 21.536 48 48 48h234.368l75.616 60.512A16.158 16.158 0 00496 512c2.336 0 4.704-.544 6.944-1.6A15.968 15.968 0 00512 496V176c0-26.464-21.536-48-48-48z">
+                                </path>
+                            </svg>
+                            Messages
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                            Notifications
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-bookmark"></i>
+                            Saved
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-podcast"></i>
+                            Live video
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">Settings & Support</div>
+                    <div class="side-menu">
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            Settings
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-users-cog"></i>
+                            Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="content-wrapper">
+                    <div class="center-padding">
+                        <div class="jox_box">
+                            <div class="company_logo">
+                                <img class="job_logo" src="images/download.jpg" alt="">
+                            </div>
+                            <h1>Front-End Developer (vue)</h1>
+                            <h4><i class="fa-solid fa-building"></i>Wisely Insure
+                                <span> <i class="fa-solid fa-location-dot"></i>Cairo</span>
+                            </h4>
+                            <h3>job description</h3>
+                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Itaque, Illum. Est Ex Modi
+                                Officiis
+                                Ullam Accusamus Corrupti Delectus Similique Eligendi Eaque Nemo, Voluptatum Sapiente
+                                Repellat, Eveniet Officia! Sed, Possimus Nesciunt.</p>
+
+                            <h3>Skills</h3>
+                            <ul class="job_skills">
+                                <li>html</li>
+                                <li>css</li>
+                                <li>js</li>
+                                <li>jquery</li>
+                                <li>bootstrap</li>
+                                <li>php XD</li>
+                            </ul>
+                            <div class="job_details">
+                                <h3>Job Details</h3>
+                                <ul>
+                                    <li>Job Location : <span>Egypt/cairo</span></li>
+                                    <li>Job Type : <span>Full Time</span></li>
+                                    <li>Years of Experience : <span>3 : 6</span></li>
+                                    <li>Salary : <span>Unspecified</span></li>
+                                    <li>Number of Vacancies : <span>5</span></li>
+                                    <li>Career Level : <span>Mid Career</span></li>
+                                    <li>Degree : <span>higher diploma</span></li>
+                                    <li>Company Industry : <span>Software Development</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="what-do">
+                            <div class="what-do-user-name">
+                                <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                    alt="">
+                                <input type="text" placeholder="Show us your work!">
+                            </div>
+                            <hr>
+                            <div class="what-do-links">
+
+                                <div>
+                                    <img src="images/home icons/file.png" alt="">
+                                    <span>Post</span>
+                                </div>
+
+                                <div>
+                                    <img src="images/home icons/image.png" alt="">
+                                    <span>Photo</span>
+                                </div>
+                                <div>
+                                    <img src="images/home icons/video (2).png" alt="">
+                                    <span>video</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-userName">
+                                <div class="post-userName1">
+                                    <div class="post-user-box">
+                                        <div class="profile_pic">
+                                            <img src="https://img.freepik.com/Ffree-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                                alt="">
+                                        </div>
+                                        <div>
+                                            <h2><a href="profile.html">3laa elbana</a></h2>
+                                            <span>January 25, 2022</span>
+                                        </div>
+                                        <i class="fa fa-ellipsis-h" style="font-size: 18px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_bg">
+                                <div class="post-text">
+                                    <p> look at this beautiful img </p>
+                                </div>
+                                <div class="post-content">
+                                    <div class="post_img_box">
+                                        <img class="post_img" src="images/img1.jpg" alt="">
+                                        <img class="post_img" src="images/img2.jpg" alt="">
+                                        <img class="post_img" src="images/img4.jpg" alt="">
+                                        <img class="post_img" src="images/img2.jpg" alt="">
+                                        <img class="post_img" src="images/img1.jpg" alt="">
+                                        <img class="post_img" src="images/img2.jpg" alt="">
+                                        <div class="seemore_box">
+                                            <p>+<span class="morenum"></span><span class="moretext"> More Images</span>
+                                            </p>
+                                        </div>
+                                        <div class="zoom_in_box">
+                                            <img src="images/img1.jpg" alt="">
+                                            <img src="images/img4.jpg" alt="">
+                                            <img src="images/img2.jpg" alt="">
+                                            <img src="images/img4.jpg" alt="">
+                                            <img src="images/img2.jpg" alt="">
+                                            <img src="images/img1.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="reactions_num">
+                                        <div class="reactions_box reactions_show_btn">
+                                            <i class="fas fa-thumbtack" style="font-size: 16px;"></i>
+                                            <input class="d-none react_check" type="checkbox">
+                                        </div>
+                                        <div class="reactions_box">
+                                            <span>582</span>
+                                            <i class="far fa-eye" style="font-size: 16px;"></i>
+                                        </div>
+                                        <button class="heart-button reactions_box ">
+                                            <span class="love_num">120</span>
+                                            <div class="heart_box">
+                                                <div class="heart-flip" style="padding: 0;"></div>
+
+                                            </div>
+                                        </button>
+                                        <div class="reactions_box">
+                                            <span>68</span>
+                                            <i class="far fa-comment-alt" style="font-size: 16px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" post-statistics">
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span class="love_num">120</span>
+                                    </div>
+                                    <div>
+                                        <i class="far fa-comment-alt"></i>
+                                        <span>68</span>
+
+                                    </div>
+                                </div>
+                                <div class="reactions">
+                                    <button class="heart-button reactions_box">
+                                        <div class="heart-flip" style="padding: 0;"></div>
+                                        <span>Love<span>d</span></span>
+                                        <input class="react_pls d-none" type="checkbox">
+                                    </button>
+                                    <div class="reactions_box">
+                                        <i class="far fa-comment-alt" style="font-size: 18px;"></i>
+                                        <span>Comment</span>
+                                    </div>
+                                    <div class="reactions_box">
+                                        <i class="fas fa-share" style="font-size: 18px;"></i>
+                                        <span>share</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what-do-user-name">
+                                <img src="images/profileimg.webp" alt="">
+                                <input type="text" placeholder="Write a comment…">
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-userName">
+                                <div class="post-userName1">
+                                    <div class="post-user-box">
+                                        <div class="profile_pic">
+                                            <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                                alt="">
+                                        </div>
+                                        <div>
+                                            <h2>3laa elbana</h2>
+                                            <span>January 25, 2022</span>
+                                        </div>
+                                        <i class="fa fa-ellipsis-h" style="font-size: 18px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_bg">
+                                <div class="post-text">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post_img_box">
+                                        <img class="post_img" src="images/img1.jpg" id="image" alt="">
+                                        <img class="post_img" src="images/img2.jpg" id="image" alt="">
+                                        <div class="seemore_box">
+                                            <p>+<span class="morenum"></span><span class="moretext"> More Images</span>
+                                            </p>
+                                        </div>
+                                        <div class="zoom_in_box">
+                                            <img src="images/img1.jpg" alt="">
+                                            <img src="images/img2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="reactions_num">
+                                        <div class="reactions_box reactions_show_btn">
+                                            <i class="fas fa-thumbtack" style="font-size: 16px;"></i>
+                                            <input class="d-none react_check" type="checkbox">
+                                        </div>
+                                        <div class="reactions_box">
+                                            <span>582</span>
+                                            <i class="far fa-eye" style="font-size: 16px;"></i>
+                                        </div>
+                                        <button class="heart-button reactions_box ">
+                                            <span class="love_num">92</span>
+                                            <div class="heart_box">
+                                                <div class="heart-flip" style="padding: 0;"></div>
+
+                                            </div>
+                                        </button>
+                                        <div class="reactions_box">
+                                            <span>68</span>
+                                            <i class="far fa-comment-alt" style="font-size: 16px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" post-statistics">
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span class="love_num">92</span>
+                                    </div>
+                                    <div>
+                                        <i class="far fa-comment-alt"></i>
+                                        <span>68</span>
+
+                                    </div>
+                                </div>
+                                <div class="reactions">
+                                    <button class="heart-button reactions_box">
+                                        <div class="heart-flip" style="padding: 0;"></div>
+                                        <span>Love<span>d</span></span>
+                                        <input class="d-none react_pls" type="checkbox">
+                                    </button>
+                                    <div class="reactions_box">
+                                        <i class="far fa-comment-alt" style="font-size: 18px;"></i>
+                                        <span>Comment</span>
+                                    </div>
+                                    <div class="reactions_box">
+                                        <i class="fas fa-share" style="font-size: 18px;"></i>
+                                        <span>share</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what-do-user-name">
+                                <img src="images/profileimg.webp" alt="">
+                                <input type="text" placeholder="Write a comment…">
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-userName">
+                                <div class="post-userName1">
+                                    <div class="post-user-box">
+                                        <div class="profile_pic">
+                                            <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                                alt="">
+                                        </div>
+                                        <div>
+                                            <h2>3laa elbana</h2>
+                                            <span>January 25, 2022</span>
+                                        </div>
+                                        <i class="fa fa-ellipsis-h" style="font-size: 18px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_bg">
+                                <div class="post-text">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post_img_box">
+                                        <img class="post_img" src="images/img2.jpg" alt="">
+                                        <img class="post_img" src="images/img4.jpg" alt="">
+                                        <img class="post_img" src="images/img1.jpg" alt="">
+                                        <div class="seemore_box">
+                                            <p>+<span class="morenum"></span><span class="moretext"> More Images</span>
+                                            </p>
+                                        </div>
+                                        <div class="zoom_in_box">
+                                            <img src="images/img2.jpg" alt="">
+                                            <img src="images/img4.jpg" alt="">
+                                            <img src="images/img1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="reactions_num">
+                                        <div class="reactions_box reactions_show_btn">
+                                            <i class="fas fa-thumbtack" style="font-size: 16px;"></i>
+                                            <input class="d-none react_check" type="checkbox">
+                                        </div>
+                                        <div class="reactions_box">
+                                            <span>582</span>
+                                            <i class="far fa-eye" style="font-size: 16px;"></i>
+                                        </div>
+                                        <button class="heart-button reactions_box ">
+                                            <span class="love_num">45</span>
+                                            <div class="heart_box">
+                                                <div class="heart-flip" style="padding: 0;"></div>
+
+                                            </div>
+                                        </button>
+                                        <div class="reactions_box">
+                                            <span>68</span>
+                                            <i class="far fa-comment-alt" style="font-size: 16px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" post-statistics">
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span class="love_num">45</span>
+                                    </div>
+                                    <div>
+                                        <i class="far fa-comment-alt"></i>
+                                        <span>68</span>
+
+                                    </div>
+                                </div>
+                                <div class="reactions">
+                                    <button class="heart-button reactions_box">
+                                        <div class="heart-flip" style="padding: 0;"></div>
+                                        <span>Love<span>d</span></span>
+                                        <input class="d-none react_pls" type="checkbox">
+                                    </button>
+                                    <div class="reactions_box">
+                                        <i class="far fa-comment-alt" style="font-size: 18px;"></i>
+                                        <span>Comment</span>
+                                    </div>
+                                    <div class="reactions_box">
+                                        <i class="fas fa-share" style="font-size: 18px;"></i>
+                                        <span>share</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what-do-user-name">
+                                <img src="images/profileimg.webp" alt="">
+                                <input type="text" placeholder="Write a comment…">
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-userName">
+                                <div class="post-userName1">
+                                    <div class="post-user-box">
+                                        <div class="profile_pic">
+                                            <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                                alt="">
+                                        </div>
+                                        <div>
+                                            <h2>3laa elbana</h2>
+                                            <span>January 25, 2022</span>
+                                        </div>
+                                        <i class="fa fa-ellipsis-h" style="font-size: 18px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_bg">
+                                <div class="post-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium
+                                        numquam
+                                        reiciendis impedit itaque deserunt, voluptate est debitis laborum, nam
+                                        corrupti
+                                        cupiditate quam sapiente dignissimos iure facere! Hic, porro quo?</p>
+                                </div>
+                                <div class="post-content">
+                                    <div class="post_img_box">
+                                        <img class="post_img" src="" alt="">
+                                        <div class="seemore_box">
+                                            <p>+<span class="morenum"></span><span class="moretext"> More Images</span>
+                                            </p>
+                                        </div>
+                                        <div class="zoom_in_box">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="reactions_num">
+                                        <div class="reactions_box reactions_show_btn">
+                                            <i class="fas fa-thumbtack" style="font-size: 16px;"></i>
+                                            <input class="d-none react_check" type="checkbox">
+                                        </div>
+                                        <div class="reactions_box">
+                                            <span>582</span>
+                                            <i class="far fa-eye" style="font-size: 16px;"></i>
+                                        </div>
+                                        <button class="heart-button reactions_box ">
+                                            <span class="love_num">72</span>
+                                            <div class="heart_box">
+                                                <div class="heart-flip" style="padding: 0;"></div>
+                                            </div>
+                                        </button>
+                                        <div class="reactions_box">
+                                            <span>68</span>
+                                            <i class="far fa-comment-alt" style="font-size: 16px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" post-statistics">
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span class="love_num">72</span>
+                                    </div>
+                                    <div>
+                                        <i class="far fa-comment-alt"></i>
+                                        <span>68</span>
+
+                                    </div>
+                                </div>
+                                <div class="reactions">
+                                    <button class="heart-button reactions_box">
+                                        <div class="heart-flip" style="padding: 0;"></div>
+                                        <span>Love<span>d</span></span>
+                                        <input class=" react_pls d-none" type="checkbox">
+                                    </button>
+                                    <div class="reactions_box">
+                                        <i class="far fa-comment-alt" style="font-size: 18px;"></i>
+                                        <span>Comment</span>
+                                    </div>
+                                    <div class="reactions_box">
+                                        <i class="fas fa-share" style="font-size: 18px;"></i>
+                                        <span>share</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what-do-user-name">
+                                <img src="images/profileimg.webp" alt="">
+                                <input type="text" placeholder="Write a comment…">
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-userName">
+                                <div class="post-userName1">
+                                    <div class="post-user-box">
+                                        <div class="profile_pic">
+                                            <img src="https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1425878822.1641168000"
+                                                alt="">
+                                        </div>
+                                        <div>
+                                            <h2>3laa elbana</h2>
+                                            <span>January 25, 2022</span>
+                                        </div>
+                                        <i class="fa fa-ellipsis-h" style="font-size: 18px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_bg">
+                                <div class="post-text">
+                                    <p> look at this beautiful video </p>
+                                </div>
+                                <div class="video_box">
+                                    <video controls crossorigin playsinline
+                                        poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+                                        class="player">
+                                        <!-- Video files -->
+                                        <!-- <source src="NieR Automata.mp4" type="video/mp4" size="576"> -->
+                                        <source
+                                            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                                            type="video/mp4" size="720">
+                                        <source
+                                            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                                            type="video/mp4" size="1080">
+                                        <source
+                                            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4"
+                                            type="video/mp4" size="1440">
+
+                                        <!-- Caption files -->
+                                        <track kind="captions" label="English" srclang="en"
+                                            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                                            default>
+                                        <track kind="captions" label="Français" srclang="fr"
+                                            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+                                    </video>
+                                </div>
+                                <div class="post-content">
+
+                                    <div class="reactions_num">
+                                        <div class="reactions_box reactions_show_btn">
+                                            <i class="fas fa-thumbtack" style="font-size: 16px;"></i>
+                                            <input class="d-none react_check" type="checkbox">
+                                        </div>
+                                        <div class="reactions_box">
+                                            <span>582</span>
+                                            <i class="far fa-eye" style="font-size: 16px;"></i>
+                                        </div>
+                                        <button class="heart-button reactions_box ">
+                                            <span class="love_num">189</span>
+                                            <div class="heart_box">
+                                                <div class="heart-flip" style="padding: 0;"></div>
+
+                                            </div>
+                                        </button>
+                                        <div class="reactions_box">
+                                            <span>68</span>
+                                            <i class="far fa-comment-alt" style="font-size: 16px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" post-statistics">
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span class="love_num">189</span>
+                                    </div>
+                                    <div>
+                                        <i class="far fa-comment-alt"></i>
+                                        <span>68</span>
+
+                                    </div>
+                                </div>
+                                <div class="reactions">
+                                    <button class="heart-button reactions_box">
+                                        <div class="heart-flip" style="padding: 0;"></div>
+                                        <span>Love<span>d</span></span>
+                                        <input class="d-none react_pls" type="checkbox">
+                                    </button>
+                                    <div class="reactions_box">
+                                        <i class="far fa-comment-alt" style="font-size: 18px;"></i>
+                                        <span>Comment</span>
+                                    </div>
+                                    <div class="reactions_box">
+                                        <i class="fas fa-share" style="font-size: 18px;"></i>
+                                        <span>share</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what-do-user-name">
+                                <img src="images/profileimg.webp" alt="">
+                                <input type="text" placeholder="Write a comment…">
+                            </div>
+                        </div>
+                        <div class="target">Double click me</div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-side right-side">
+                <div class="side-wrapper">
+                    <div class="side-title">Featured Job Post </div>
+                    <div class="side-menu">
+                        <a href="#" class="job_link">
+                            <h4>Full Time Graphic Designer Is Needed For Immediate Hire In… </h4>
+                            <p>Egypt / Full Time</p>
+                        </a>
+                        <a href="#" class="job_link">
+                            <h4> Looking To Hire Someone With Knowledge About… </h4>
+                            <p>Saudi Arabia / Part Time</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">Recommended Jobs for You </div>
+                    <div class="side-menu">
+                        <a href="#" class="job_link">
+                            <h4>Branding And Identity Development- Senior Graphic Designer </h4>
+                            <p>Full Time</p>
+                        </a>
+                        <a href="#" class="job_link">
+                            <h4> Looking To Hire Someone With Knowledge About… </h4>
+                            <p>Saudi Arabia / Part Time</p>
+                        </a>
+                        <a href="#" class="job_link">
+                            <h4>Logo And Webpage Designer</h4>
+                            <p>Egypt / Freelance </p>
+                        </a>
+                        <a href="#" class="job_link">
+                            <h4> Front-End Developer (WordPress) </h4>
+                            <p>Full Time</p>
+                        </a>
+                        <a href="#" class="job_link">
+                            <h4>Full Time Graphic Designer Is Needed For Immediate Hire In… </h4>
+                            <p>Egypt / Full Time</p>
+                        </a>
+                        <a href="#" class="job_link">
+                            <h4> Looking To Hire Someone With Knowledge About… </h4>
+                            <p>Saudi Arabia / Part Time</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pswp">
+            <!-- Background of PhotoSwipe. 
+               It's a separate element, as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                <div class="pswp__container" style="transform: translate3d(0px, 0px, 0px);">
+                    <!-- don't modify these 3 pswp__item elements, data is added later on -->
+                    <div class="pswp__item" style="display: block; transform: translate3d(-1720px, 0px, 0px);">
+                    </div>
+                    <div class="pswp__item" style="transform: translate3d(0px, 0px, 0px);">
+                    </div>
+                    <div class="pswp__item" style="display: block; transform: translate3d(1720px, 0px, 0px);">
+                    </div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--fit pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter">1 / 2</div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/modernizr-3.6.0.min.js"></script>
+    <script src="js/photoswipe.min.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src='js/plyr.js'></script>
+    <script src="js/coustom.js"></script>
+    <script>
+        const toggleButton = document.querySelector('.dark-light');
+
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+    <script>
+        var touchtime = 0;
+        $(".target").on("click", function () {
+            if (touchtime == 0) {
+                // set first click
+                touchtime = new Date().getTime();
+            } else {
+                // compare first click to this click and see if they occurred within double click threshold
+                if (((new Date().getTime()) - touchtime) < 800) {
+                    // double click occurred
+                    alert("double clicked");
+                    if (fullscreentest == 0) {
+                        start();
+                        console.log("hi")
+                        fullscreentest = 1
+                    } else {
+                        console.log("bye")
+                        end();
+                        fullscreentest = 0
+                    }
+                    touchtime = 0;
+                } else {
+                    // not a double click so set as a new first click
+                    touchtime = new Date().getTime();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
