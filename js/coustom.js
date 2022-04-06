@@ -30,31 +30,6 @@ $(document).ready(function () {
             fullscreentest = 0
         }
     });
-    var touchtime = 0;
-    $(".plyr__poster").on("click", async function () {
-        if (touchtime == 0) {
-            // set first click
-            touchtime = new Date().getTime();
-        } else {
-            // compare first click to this click and see if they occurred within double click threshold
-            if (((new Date().getTime()) - touchtime) < 800) {
-                // double click occurred
-                if (fullscreentest == 0) {
-                    await end();
-                    console.log("hi")
-                    fullscreentest = 1
-                } else {
-                    console.log("bye")
-                    await start();
-                    fullscreentest = 0
-                }
-                touchtime = 0;
-            } else {
-                // not a double click so set as a new first click
-                touchtime = new Date().getTime();
-            }
-        }
-    });
 
     if (document.addEventListener) {
         document.addEventListener('fullscreenchange', exitHandler, false);
