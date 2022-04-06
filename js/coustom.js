@@ -31,13 +31,14 @@ $(document).ready(function () {
         }
     });
     var touchtime = 0;
-    $(".target").on("click", function () {
+    $(".plyr__poster").on("click", function () {
         if (touchtime == 0) {
             // set first click
             touchtime = new Date().getTime();
         } else {
             // compare first click to this click and see if they occurred within double click threshold
             if (((new Date().getTime()) - touchtime) < 800) {
+                alert("double clicked");
                 // double click occurred
                 if (fullscreentest == 0) {
                     start();
