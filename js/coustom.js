@@ -55,9 +55,14 @@ $(document).ready(function () {
     }
 
     function EnterHandler() {
-        if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-            start();
-            fullscreentest = 1
+        if (fullscreentest == 0) {
+            if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+                start();
+                console.log('Enter')
+                fullscreentest = 1
+            } else {
+                EnterHandler()
+            }
         }
     }
 
