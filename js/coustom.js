@@ -15,6 +15,7 @@ $(document).ready(function () {
 
     async function start() {
         await screen.orientation.lock("landscape");
+
     }
     async function end() {
         screen.orientation.unlock()
@@ -30,7 +31,7 @@ $(document).ready(function () {
         }
     });
     var touchtime = 0;
-    $(".plyr__poster").on("click", async function () {
+    $(".plyr__poster").on("click",async function () {
         if (touchtime == 0) {
             // set first click
             touchtime = new Date().getTime();
@@ -38,7 +39,15 @@ $(document).ready(function () {
             // compare first click to this click and see if they occurred within double click threshold
             if (((new Date().getTime()) - touchtime) < 800) {
                 // double click occurred
-                EnterHandler()
+                if (fullscreentest == 0) {
+                    await start();
+                    console.log("hi")
+                    fullscreentest = 1
+                } else {
+                    console.log("bye")
+                    end();
+                    fullscreentest = 0
+                }
                 touchtime = 0;
             } else {
                 // not a double click so set as a new first click
@@ -54,26 +63,12 @@ $(document).ready(function () {
         document.addEventListener('webkitfullscreenchange', exitHandler, false);
     }
 
-    async function EnterHandler() {
-        if (fullscreentest == 0) {
-            if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-                start();
-                console.log('Enter')
-                fullscreentest = 1
-            } else {
-                await document.body.requestFullscreen();
-            }
-        }
-    }
-
     function exitHandler() {
         if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
             end();
             fullscreentest = 0
         }
     }
-
-
 });
 
 $(function () {
