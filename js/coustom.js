@@ -54,14 +54,14 @@ $(document).ready(function () {
         document.addEventListener('webkitfullscreenchange', exitHandler, false);
     }
 
-    function EnterHandler() {
+    async function EnterHandler() {
         if (fullscreentest == 0) {
             if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
                 start();
                 console.log('Enter')
                 fullscreentest = 1
             } else {
-                EnterHandler()
+                await document.body.requestFullscreen();
             }
         }
     }
