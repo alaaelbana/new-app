@@ -576,7 +576,6 @@
                             <div class="post_bg">
                                 <div class="post-text">
                                     <p> look at this beautiful video </p>
-                                    <div style="margin-bottom: 15px;" class="target">Double click me</div>
                                 </div>
                                 <div class="video_box">
                                     <video controls crossorigin playsinline
@@ -784,34 +783,6 @@
 
         toggleButton.addEventListener('click', () => {
             document.body.classList.toggle('light-mode');
-        });
-    </script>
-    <script>
-        var touchtime = 0;
-        $(".target").on("click", function () {
-            if (touchtime == 0) {
-                // set first click
-                touchtime = new Date().getTime();
-            } else {
-                // compare first click to this click and see if they occurred within double click threshold
-                if (((new Date().getTime()) - touchtime) < 800) {
-                    // double click occurred
-                    alert("double clicked");
-                    if (fullscreentest == 0) {
-                        start();
-                        console.log("hi")
-                        fullscreentest = 1
-                    } else {
-                        console.log("bye")
-                        end();
-                        fullscreentest = 0
-                    }
-                    touchtime = 0;
-                } else {
-                    // not a double click so set as a new first click
-                    touchtime = new Date().getTime();
-                }
-            }
         });
     </script>
 </body>

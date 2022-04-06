@@ -15,7 +15,6 @@ $(document).ready(function () {
 
     async function start() {
         await screen.orientation.lock("landscape");
-
     }
     async function end() {
         screen.orientation.unlock()
@@ -31,7 +30,7 @@ $(document).ready(function () {
         }
     });
     var touchtime = 0;
-    $(".plyr__poster").on("click", function () {
+    $(".plyr__poster").on("click", async function () {
         if (touchtime == 0) {
             // set first click
             touchtime = new Date().getTime();
@@ -39,7 +38,15 @@ $(document).ready(function () {
             // compare first click to this click and see if they occurred within double click threshold
             if (((new Date().getTime()) - touchtime) < 800) {
                 // double click occurred
-                start();
+                if (fullscreentest == 0) {
+                    start();
+                    console.log("hi");
+                    fullscreentest = 1
+                } else {
+                    console.log("bye");
+                    end();
+                    fullscreentest = 0
+                }
                 touchtime = 0;
             } else {
                 // not a double click so set as a new first click
