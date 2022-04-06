@@ -38,17 +38,8 @@ $(document).ready(function () {
         } else {
             // compare first click to this click and see if they occurred within double click threshold
             if (((new Date().getTime()) - touchtime) < 800) {
-                alert("double clicked");
                 // double click occurred
-                if (fullscreentest == 0) {
-                    start();
-                    console.log("hi")
-                    fullscreentest = 1
-                } else {
-                    console.log("bye")
-                    end();
-                    fullscreentest = 0
-                }
+                start();
                 touchtime = 0;
             } else {
                 // not a double click so set as a new first click
