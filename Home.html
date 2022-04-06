@@ -797,15 +797,7 @@
                 if (((new Date().getTime()) - touchtime) < 800) {
                     // double click occurred
                     alert("double clicked");
-                    if (fullscreentest == 0) {
-                        start();
-                        console.log("hi")
-                        fullscreentest = 1
-                    } else {
-                        console.log("bye")
-                        end();
-                        fullscreentest = 0
-                    }
+                    
                     touchtime = 0;
                 } else {
                     // not a double click so set as a new first click
