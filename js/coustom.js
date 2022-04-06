@@ -31,7 +31,7 @@ $(document).ready(function () {
         }
     });
     var touchtime = 0;
-    $(".plyr__poster").on("click",async function () {
+    $(".plyr__poster").on("click", async function () {
         if (touchtime == 0) {
             // set first click
             touchtime = new Date().getTime();
@@ -40,12 +40,12 @@ $(document).ready(function () {
             if (((new Date().getTime()) - touchtime) < 800) {
                 // double click occurred
                 if (fullscreentest == 0) {
-                    await start();
+                    await end();
                     console.log("hi")
                     fullscreentest = 1
                 } else {
                     console.log("bye")
-                    end();
+                    await start();
                     fullscreentest = 0
                 }
                 touchtime = 0;
