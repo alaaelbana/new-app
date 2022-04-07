@@ -282,6 +282,17 @@ $('.seemore').click(function () {
 $('.post_img:nth-child(2)').click(function () {
     $(".pswp__button--arrow--right").click()
 });
+$('.post_img').click(function () {
+    if (document.body.offsetWidth < 770) {
+        $(".pswp__button--fs").click()
+    }
+});
+$('.seemore').click(function () {
+    if (document.body.offsetWidth < 770) {
+        $(".pswp__button--fs").click()
+    }
+});
+
 
 var openPhotoSwipe = function () {
     var pswpElement = document.querySelectorAll('.pswp')[0];
