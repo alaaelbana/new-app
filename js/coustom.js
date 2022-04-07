@@ -42,6 +42,10 @@ $(document).ready(function () {
         if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
             end();
             fullscreentest = 0
+
+
+
+            $(".pswp").removeClass("pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--animated-in pswp--zoom-allowed pswp--visible pswp--has_mouse")
         }
     }
 });
