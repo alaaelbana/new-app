@@ -14,8 +14,9 @@ $(document).ready(function () {
 
 
     async function start() {
-        await screen.orientation.lock("landscape");
-
+        if (document.body.offsetWidth < 770) {
+            await screen.orientation.lock("landscape");
+        }
     }
     async function end() {
         screen.orientation.unlock()
@@ -42,11 +43,27 @@ $(document).ready(function () {
         if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
             end();
             fullscreentest = 0
-
-
-
-            $(".pswp").removeClass("pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--animated-in pswp--zoom-allowed pswp--visible pswp--has_mouse")
         }
+    }
+});
+
+$(window).on("navigate", function (event, data) {
+    var direction = data.state.direction;
+    if (direction == 'back') {
+        $(".pswp").removeClass("pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--animated-in pswp--zoom-allowed pswp--visible pswp--has_mouse")
+        alert("back")
+    }
+    if (direction == 'forward') {}
+});
+
+$(document).bind('keydown', function (event) {
+    if (event.keyCode == 27) {
+        // Prevent default (disable the back button behavior)
+        event.preventDefault();
+
+        // Your code to show another page or whatever...
+        $(".pswp").removeClass("pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--animated-in pswp--zoom-allowed pswp--visible pswp--has_mouse")
+        alert("back")
     }
 });
 
@@ -286,17 +303,6 @@ $('.seemore').click(function () {
 $('.post_img:nth-child(2)').click(function () {
     $(".pswp__button--arrow--right").click()
 });
-$('.post_img').click(function () {
-    if (document.body.offsetWidth < 770) {
-        $(".pswp__button--fs").click()
-    }
-});
-$('.seemore').click(function () {
-    if (document.body.offsetWidth < 770) {
-        $(".pswp__button--fs").click()
-    }
-});
-
 
 var openPhotoSwipe = function () {
     var pswpElement = document.querySelectorAll('.pswp')[0];
