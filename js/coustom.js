@@ -47,26 +47,6 @@ $(document).ready(function () {
     }
 });
 
-$(window).on("navigate", function (event, data) {
-    var direction = data.state.direction;
-    if (direction == 'back') {
-        $(".pswp").removeClass("pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--animated-in pswp--zoom-allowed pswp--visible pswp--has_mouse")
-        alert("back")
-    }
-    if (direction == 'forward') {}
-});
-
-$(document).bind('keydown', function (event) {
-    if (event.keyCode == 27) {
-        // Prevent default (disable the back button behavior)
-        event.preventDefault();
-
-        // Your code to show another page or whatever...
-        $(".pswp").removeClass("pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--animated-in pswp--zoom-allowed pswp--visible pswp--has_mouse")
-        alert("back")
-    }
-});
-
 $(function () {
     $(".menu-link").click(function () {
         $(".menu-link").removeClass("is-active");
