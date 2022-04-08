@@ -174,8 +174,6 @@ body.light-mode .video-bg:before {
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     font-size: 15px;
     font-weight: 500;
     height: 100%;
@@ -540,50 +538,6 @@ body.light-mode .video-bg:before {
     padding: 0 30px;
 }
 
-@media screen and (max-width: 1055px) {
-    .menu-link-main {
-        display: none;
-    }
-}
-
-.content-wrapper {
-    color: var(--theme-color);
-    padding: 30px;
-    height: 100%;
-    overflow: auto;
-}
-
-@media screen and (max-width: 510px) {
-    .content-wrapper {
-        padding: 20px;
-    }
-}
-
-
-.content-wrapper.overlay {
-    pointer-events: none;
-    transition: 0.3s;
-    background-color: var(--overlay-bg);
-}
-
-.overlay-app {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: all;
-    background-color: rgba(36, 39, 59, 0.8);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-}
-
-.overlay-app.is-active {
-    visibility: visible;
-    opacity: 1;
-}
-
 .img-content {
     font-weight: 500;
     font-size: 17px;
@@ -633,12 +587,6 @@ body.light-mode .video-bg:before {
     margin-top: -25px;
     -o-object-position: center;
     object-position: center;
-}
-
-@media screen and (max-width: 570px) {
-    .content-wrapper-img {
-        width: 110px;
-    }
 }
 
 .content-section {
@@ -707,64 +655,11 @@ body.light-mode .video-bg:before {
     width: 150px;
 }
 
-@media screen and (max-width: 480px) {
-    .products {
-        width: 120px;
-    }
-}
-
-.status {
-    margin-left: auto;
-    width: 140px;
-    font-size: 15px;
-    position: relative;
-}
-
-@media screen and (max-width: 700px) {
-    .status {
-        display: none;
-    }
-}
-
-.dropdown {
-    position: relative;
-    height: 53px;
-    width: 40px;
-    top: -24px;
-    display: flex;
-    left: -5px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown ul {
-    position: absolute;
-    background: var(--dropdown-bg);
-    height: 110px;
-    width: 120px;
-    right: 0;
-    top: 20px;
-    pointer-events: none;
-    opacity: 0;
-    transform: translatey(10px);
-    transition: all 0.4s ease;
-}
-
-.dropdown ul li a {
-    text-decoration: none;
+.content-wrapper {
     color: var(--theme-color);
-    font-size: 12px;
-}
-
-.dropdown.is-active ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translatey(25px);
-}
-
-.dropdown.is-active ul li:hover {
-    background-color: var(--dropdown-hover);
+    padding: 30px;
+    height: 100%;
+    overflow: auto;
 }
 
 
@@ -939,12 +834,6 @@ body.light-mode .video-bg:before {
     align-items: center;
 }
 
-@media (max-width:496px) {
-    .what-do-links div:last-child {
-        display: none;
-    }
-}
-
 .what-do-links>div {
     width: 100%;
     display: flex;
@@ -1025,7 +914,7 @@ body.light-mode .video-bg:before {
     display: inline-block;
     font-size: 13px;
     color: #878787;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 .post-userName i {
@@ -1237,7 +1126,7 @@ body.light-mode .video-bg:before {
     opacity: 0;
     transition: .4s;
     bottom: -25px;
-    padding: 15px 3px;
+    padding: 8px 3px;
 }
 
 .post .post_bg:hover .reactions {
@@ -1291,6 +1180,8 @@ body.light-mode .video-bg:before {
     position: relative;
     bottom: 0;
     opacity: 1;
+    padding: 15px 3px;
+
 }
 
 .post.just_text .reactions .reactions_box {
@@ -1637,15 +1528,6 @@ body.light-mode .video-bg:before {
 }
 
 @media screen and (max-width: 1110px) {
-    .app-card {
-        width: calc(50% - 20px);
-    }
-
-    .app-card:last-child {
-        margin-top: 20px;
-        margin-left: 0px;
-    }
-
     .right-side {
         display: none;
     }
@@ -1654,6 +1536,7 @@ body.light-mode .video-bg:before {
         margin: 0 30px;
     }
 }
+
 
 @media screen and (max-width: 765px) {
 
@@ -1670,16 +1553,8 @@ body.light-mode .video-bg:before {
     }
 }
 
+
 @media screen and (max-width: 565px) {
-    .app-card {
-        width: calc(100% - 20px);
-        margin-top: 20px;
-    }
-
-    .app-card+.app-card {
-        margin-left: 0;
-    }
-
     .center-padding {
         margin: 0;
     }
@@ -1689,6 +1564,7 @@ body.light-mode .video-bg:before {
     }
 
     .reactions {
+        padding: 15px 3px;
         bottom: 0;
         opacity: 1;
         position: relative;
@@ -1717,6 +1593,13 @@ body.light-mode .video-bg:before {
         height: auto;
     }
 }
+
+@media screen and (max-width: 510px) {
+    .content-wrapper {
+        padding: 20px;
+    }
+}
+
 
 ::-webkit-scrollbar {
     width: 6px;
