@@ -1594,13 +1594,6 @@ body.light-mode .video-bg:before {
     }
 }
 
-@media screen and (max-width: 510px) {
-    .content-wrapper {
-        padding: 20px;
-    }
-}
-
-
 ::-webkit-scrollbar {
     width: 6px;
     border-radius: 10px;
