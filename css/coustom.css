@@ -1196,7 +1196,7 @@ body.light-mode .video-bg:before {
 }
 
 .post .comments {
-    padding: 5px 15px 8px;
+    padding: 5px 15px 0px;
     display: flex;
     gap: 10px;
     background: #202020;
@@ -1215,10 +1215,9 @@ body.light-mode .video-bg:before {
 }
 
 .post .comments .coment_box {
-    padding: 10px 10px 15px;
+    padding: 10px;
     background: #252525;
     border-radius: 13px;
-    max-width: 85%;
 }
 
 .post .comments .coment_box h4 {
@@ -1239,6 +1238,34 @@ body.light-mode .video-bg:before {
     font-weight: 400;
     font-family: "Tajawal";
 
+}
+
+.post .comments .comment_reply {
+    padding-inline-end: 8%;
+}
+
+.post .comments .reply_box {
+    padding: 0 5px;
+}
+
+.post .comments .reply_box button {
+    background: transparent;
+    border: none;
+    color: #ddd;
+    font-family: "Tajawal";
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 5px;
+    transition: .4s color;
+}
+
+.post .comments .reply_box .loved {
+    color: #ff5b88;
+}
+
+.post .comments .reply_box button i {
+    font-size: 13px;
 }
 
 .post .post_bg .post-content .post_img_box {
@@ -1591,6 +1618,10 @@ body.light-mode .video-bg:before {
     .post .post_bg .post-content .img_flex {
         max-height: 70vh;
         height: auto;
+    }
+
+    .post .comments .comment_reply {
+        padding-inline-end: 5%;
     }
 }
 

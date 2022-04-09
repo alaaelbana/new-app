@@ -164,7 +164,9 @@ $(".post .post-content .reactions_num .heart-button").click(function () {
         $(this).parent().parent().parent().find('.reactions .heart-button .react_pls').prop('checked', true);
     }
 });
-
+$('.post .comments .reply_box .love_btn').click(function () {
+    $(this).toggleClass('loved')
+});
 $('.menu-items .profile-menu-link').click(function (e) {
     e.preventDefault();
 });
