@@ -280,7 +280,7 @@
                                         <span>Love<span>d</span></span>
                                         <input class="react_pls d-none" type="checkbox">
                                     </button>
-                                    <div class="reactions_box">
+                                    <div class="reactions_box comment_btn">
                                         <i class="far fa-comment-alt" style="font-size: 18px;"></i>
                                         <span>Comment</span>
                                     </div>
@@ -290,9 +290,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="what-do-user-name">
-                                <img src="images/profileimg.webp" alt="">
-                                <input type="text" placeholder="Write a comment…">
+                            <div class="write_comment">
+                                <div class="what-do-user-name">
+                                    <img src="images/profileimg.webp" alt="">
+                                    <input type="text" placeholder="Write a comment…">
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -366,7 +368,7 @@
                                         <span>Love<span>d</span></span>
                                         <input class="d-none react_pls" type="checkbox">
                                     </button>
-                                    <div class="reactions_box">
+                                    <div class="reactions_box comment_btn">
                                         <i class="far fa-comment-alt" style="font-size: 18px;"></i>
                                         <span>Comment</span>
                                     </div>
@@ -376,9 +378,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="what-do-user-name">
-                                <img src="images/profileimg.webp" alt="">
-                                <input type="text" placeholder="Write a comment…">
+                            <div class="write_comment">
+                                <div class="what-do-user-name">
+                                    <img src="images/profileimg.webp" alt="">
+                                    <input type="text" placeholder="Write a comment…">
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -454,7 +458,7 @@
                                         <span>Love<span>d</span></span>
                                         <input class="d-none react_pls" type="checkbox">
                                     </button>
-                                    <div class="reactions_box">
+                                    <div class="reactions_box comment_btn">
                                         <i class="far fa-comment-alt" style="font-size: 18px;"></i>
                                         <span>Comment</span>
                                     </div>
@@ -464,9 +468,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="what-do-user-name">
-                                <img src="images/profileimg.webp" alt="">
-                                <input type="text" placeholder="Write a comment…">
+                            <div class="write_comment">
+                                <div class="what-do-user-name">
+                                    <img src="images/profileimg.webp" alt="">
+                                    <input type="text" placeholder="Write a comment…">
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -542,7 +548,7 @@
                                         <span>Love<span>d</span></span>
                                         <input class=" react_pls d-none" type="checkbox">
                                     </button>
-                                    <div class="reactions_box">
+                                    <div class="reactions_box comment_btn">
                                         <i class="far fa-comment-alt" style="font-size: 18px;"></i>
                                         <span>Comment</span>
                                     </div>
@@ -552,57 +558,171 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="comments">
-                                <img class="coment_profile_pic" src="images/profileimg.webp" alt="">
-                                <div class="comment_reply">
-                                    <div class="coment_box">
-                                        <h4><a href="#">3laa elbana</a></h4>
-                                        <p class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Laborum
-                                            aspernatur
-                                            similique, neque eveniet, necessitatibus adipisci natus atque magnam,
-                                            asperiores
-                                            recusandae laboriosam. Tempora quisquam temporibus reiciendis amet pariatur
-                                            neque
-                                            necessitatibus doloribus!</p>
-                                    </div>
-                                    <div class="reply_box">
-                                        <button class="love_btn"><i class="fas fa-heart"></i> Love</button>
-                                        <button class="reply_btn"><i class="fa-solid fa-reply"></i> Reply</button>
-                                    </div>
+                            <div class="write_comment">
+                                <div class="what-do-user-name">
+                                    <img src="images/profileimg.webp" alt="">
+                                    <input type="text" placeholder="Write a comment…">
                                 </div>
                             </div>
+
                             <div class="comments">
-                                <img class="coment_profile_pic" src="images/profileimg.webp" alt="">
-                                <div class="comment_reply">
-                                    <div class="coment_box">
-                                        <h4><a href="#">3laa elbana</a></h4>
-                                        <p class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Laborum aspernatur similique, neque eveniet, necessitatibus adipisci natus
-                                            atque magnam</p>
-                                    </div>
-                                    <div class="reply_box">
-                                        <button class="love_btn"><i class="fas fa-heart"></i> Love</button>
-                                        <button class="reply_btn"><i class="fa-solid fa-reply"></i> Reply</button>
+                                <div class="comment_box">
+                                    <div class="comment">
+                                        <img class="comment_profile_pic" src="images/profileimg.webp" alt="">
+                                        <div class="comment_reply">
+                                            <div class="coment_box">
+                                                <div class="user_name"><a href="#">3laa elbana</a></div>
+                                                <p class="coment">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit.
+                                                    Laborum
+                                                    aspernatur
+                                                    similique, neque eveniet, necessitatibus adipisci natus atque
+                                                    magnam,
+                                                    asperiores
+                                                    recusandae laboriosam. Tempora quisquam temporibus reiciendis amet
+                                                    pariatur
+                                                    neque
+                                                    necessitatibus doloribus!</p>
+                                            </div>
+                                            <div class="reply_box">
+                                                <div class="reply_reactions">
+                                                    <button class="love_btn"><i class="fas fa-heart"></i> Love</button>
+                                                    <button class="reply_btn"><i class="fa-solid fa-reply"></i>
+                                                        Reply</button>
+                                                    <span class="time">5h</span>
+                                                </div>
+                                                <div class="reply">
+                                                    <div class="write_reply">
+                                                        <div class="what-do-user-name">
+                                                            <img src="images/profileimg.webp" alt="">
+                                                            <input type="text" placeholder="Write a comment…">
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments">
+                                                        <div class="comment_box">
+                                                            <div class="comment">
+                                                                <img class="comment_profile_pic"
+                                                                    src="images/profileimg.webp" alt="">
+                                                                <div class="comment_reply">
+                                                                    <div class="coment_box">
+                                                                        <div class="user_name"><a href="#">3laa
+                                                                                elbana</a>
+                                                                        </div>
+                                                                        <p class="coment">Lorem ipsum dolor sit amet
+                                                                            consectetur adipisicing elit. Laborum
+                                                                            recusandae laboriosam. Tempora quisquam
+                                                                            temporibus reiciendis amet pariatur
+                                                                            neque necessitatibus doloribus!</p>
+                                                                    </div>
+                                                                    <div class="reply_box">
+                                                                        <div class="reply_reactions">
+                                                                            <button class="love_btn"><i
+                                                                                    class="fas fa-heart"></i>
+                                                                                Love</button>
+                                                                            <span class="time">22m</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment_box">
+                                                            <div class="comment">
+                                                                <img class="comment_profile_pic"
+                                                                    src="images/profileimg.webp" alt="">
+                                                                <div class="comment_reply">
+                                                                    <div class="coment_box">
+                                                                        <div class="user_name"><a href="#">3laa
+                                                                                elbana</a>
+                                                                        </div>
+                                                                        <p class="coment">Lorem ipsum dolor sit amet
+                                                                            consectetur adipisicing elit. Laborum
+                                                                            aspernatur
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="reply_box">
+                                                                        <div class="reply_reactions">
+                                                                            <button class="love_btn"><i
+                                                                                    class="fas fa-heart"></i>
+                                                                                Love</button>
+                                                                            <span class="time">22m</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="show_more_replys">
+                                                        Show More Replys
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="comments">
-                                <img class="coment_profile_pic" src="images/profileimg.webp" alt="">
-                                <div class="comment_reply">
-                                    <div class="coment_box">
-                                        <h4><a href="#">3laa elbana</a></h4>
-                                        <p class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                    <div class="reply_box">
-                                        <button class="love_btn"><i class="fas fa-heart"></i> Love</button>
-                                        <button class="reply_btn"><i class="fa-solid fa-reply"></i> Reply</button>
+                                <div class="comment_box">
+                                    <div class="comment">
+                                        <img class="comment_profile_pic" src="images/profileimg.webp" alt="">
+                                        <div class="comment_reply">
+                                            <div class="coment_box">
+                                                <div class="user_name"><a href="#">3laa elbana</a></div>
+                                                <p class="coment">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit.
+                                                    Laborum
+                                                    aspernatur
+                                                    similique, neque eveniet, necessitatibus adipisci natus atque
+                                                    magnam,
+                                                    asperiores
+                                                    recusandae laboriosam. Tempora quisquam temporibus reiciendis amet
+                                                    pariatur
+                                                    neque
+                                                    necessitatibus doloribus!</p>
+                                            </div>
+                                            <div class="reply_box">
+                                                <div class="reply_reactions">
+                                                    <button class="love_btn"><i class="fas fa-heart"></i> Love</button>
+                                                    <button class="reply_btn"><i class="fa-solid fa-reply"></i>
+                                                        Reply</button>
+                                                    <span class="time">5h</span>
+                                                </div>
+                                                <div class="reply">
+                                                    <div class="what-do-user-name">
+                                                        <img src="images/profileimg.webp" alt="">
+                                                        <input type="text" placeholder="Write a comment…">
+                                                    </div>
+                                                    <div class="comments">
+                                                        <img class="comment_profile_pic" src="images/profileimg.webp"
+                                                            alt="">
+                                                        <div class="comment_reply">
+                                                            <div class="coment_box">
+                                                                <div class="user_name"><a href="#">3laa elbana</a></div>
+                                                                <p class="coment">Lorem ipsum dolor sit amet consectetur
+                                                                    adipisicing elit.
+                                                                    Laborum
+                                                                    aspernatur
+                                                                    similique, neque eveniet, necessitatibus adipisci
+                                                                    natus
+                                                                    atque magnam,
+                                                                    asperiores
+                                                                    recusandae laboriosam. Tempora quisquam temporibus
+                                                                    reiciendis amet pariatur
+                                                                    neque
+                                                                    necessitatibus doloribus!</p>
+                                                            </div>
+                                                            <div class="reply_box">
+                                                                <div class="reply_reactions">
+                                                                    <button class="love_btn"><i
+                                                                            class="fas fa-heart"></i>
+                                                                        Love</button>
+                                                                    <span class="time">22m</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="what-do-user-name">
-                                <img src="images/profileimg.webp" alt="">
-                                <input type="text" placeholder="Write a comment…">
                             </div>
                         </div>
                         <div class="post">
@@ -690,7 +810,7 @@
                                         <span>Love<span>d</span></span>
                                         <input class="d-none react_pls" type="checkbox">
                                     </button>
-                                    <div class="reactions_box">
+                                    <div class="reactions_box comment_btn">
                                         <i class="far fa-comment-alt" style="font-size: 18px;"></i>
                                         <span>Comment</span>
                                     </div>
@@ -700,9 +820,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="what-do-user-name">
-                                <img src="images/profileimg.webp" alt="">
-                                <input type="text" placeholder="Write a comment…">
+                            <div class="write_comment">
+                                <div class="what-do-user-name">
+                                    <img src="images/profileimg.webp" alt="">
+                                    <input type="text" placeholder="Write a comment…">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -713,12 +835,12 @@
                     <div class="side-title">Featured Job Post </div>
                     <div class="side-menu">
                         <a href="#" class="job_link">
-                            <h4>Full Time Graphic Designer Is Needed For Immediate Hire In… </h4>
-                            <p>Egypt / Full Time</p>
+                            <p>Full Time Graphic Designer Is Needed For Immediate Hire In… </p>
+                            <span>Egypt / Full Time</span>
                         </a>
                         <a href="#" class="job_link">
-                            <h4> Looking To Hire Someone With Knowledge About… </h4>
-                            <p>Saudi Arabia / Part Time</p>
+                            <p> Looking To Hire Someone With Knowledge About… </p>
+                            <span>Saudi Arabia / Part Time</span>
                         </a>
                     </div>
                 </div>
@@ -726,28 +848,20 @@
                     <div class="side-title">Recommended Jobs for You </div>
                     <div class="side-menu">
                         <a href="#" class="job_link">
-                            <h4>Branding And Identity Development- Senior Graphic Designer </h4>
-                            <p>Full Time</p>
+                            <p>Full Time Graphic Designer Is Needed For Immediate Hire In… </p>
+                            <span>Egypt / Full Time</span>
                         </a>
                         <a href="#" class="job_link">
-                            <h4> Looking To Hire Someone With Knowledge About… </h4>
-                            <p>Saudi Arabia / Part Time</p>
+                            <p> Looking To Hire Someone With Knowledge About… </p>
+                            <span>Saudi Arabia / Part Time</span>
                         </a>
                         <a href="#" class="job_link">
-                            <h4>Logo And Webpage Designer</h4>
-                            <p>Egypt / Freelance </p>
+                            <p>Full Time Graphic Designer Is Needed For Immediate Hire In… </p>
+                            <span>Egypt / Full Time</span>
                         </a>
                         <a href="#" class="job_link">
-                            <h4> Front-End Developer (WordPress) </h4>
-                            <p>Full Time</p>
-                        </a>
-                        <a href="#" class="job_link">
-                            <h4>Full Time Graphic Designer Is Needed For Immediate Hire In… </h4>
-                            <p>Egypt / Full Time</p>
-                        </a>
-                        <a href="#" class="job_link">
-                            <h4> Looking To Hire Someone With Knowledge About… </h4>
-                            <p>Saudi Arabia / Part Time</p>
+                            <p> Looking To Hire Someone With Knowledge About… </p>
+                            <span>Saudi Arabia / Part Time</span>
                         </a>
                     </div>
                 </div>
