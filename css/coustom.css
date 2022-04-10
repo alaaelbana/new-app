@@ -1293,6 +1293,10 @@ img {
 }
 
 .post .comments .reply_box .reply .comments .comment_box .comment {
+    padding: 3px 0px 0px;
+}
+
+.post .comments .reply_box .reply .comments .comment_box:last-child .comment {
     padding: 3px 0px 5px;
 }
 
@@ -1307,7 +1311,7 @@ img {
 
 .post .comments .reply_box .reply .show_more_replys {
     font-size: 13px;
-    padding: 4px 50px 5px;
+    padding: 4px 50px 10px;
     color: #ddd;
     cursor: pointer;
     display: none;
