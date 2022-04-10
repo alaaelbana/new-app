@@ -1117,7 +1117,6 @@ img {
     width: 100%;
     bottom: 0;
     opacity: 0;
-    transition: .4s;
     bottom: -25px;
     padding: 8px 3px;
 }
@@ -1173,8 +1172,12 @@ img {
     position: relative;
     bottom: 0;
     opacity: 1;
-    padding: 15px 3px;
+    padding: 8px 3px;
 
+}
+
+.post.just_text .reactions.reaction_pading {
+    padding: 15px 3px;
 }
 
 .post.just_text .reactions .reactions_box {
