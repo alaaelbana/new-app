@@ -204,7 +204,7 @@ $('.menu-items .profile-menu-link').click(function (e) {
 
 $(".job_link").mouseenter(function () {
     $(".jox_box").fadeIn();
-    $(".jox_box h1").text($(this).find("h4").text());
+    $(".jox_box h1").text($(this).find("p").text());
 
 });
 $(".job_link").mouseleave(function () {
