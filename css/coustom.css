@@ -1368,13 +1368,13 @@ img {
 }
 
 .post .post_bg .post-content .img_flex3_width .post_img:first-child {
-    grid-column: 1 / 3;
-    grid-row-start: 1;
+    grid-row: 1 / 3;
+    grid-column-start: 1;
 }
 
 .post .post_bg .post-content .img_flex3_height .post_img:first-child {
-    grid-row: 1 / 3;
-    grid-column-start: 1;
+    grid-column: 1 / 3;
+    grid-row-start: 1;
 }
 
 .post .post_bg .post-content .img_flex4_width {
