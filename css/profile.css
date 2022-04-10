@@ -351,14 +351,18 @@ body {
 
 .profile_all .timeline-left .intro_box .skills .skills_item,
 .profile_all .timeline-left .intro_box .hobbies .skills_item {
-    display: flex;
-    align-items: center;
     border-radius: 3px;
-    list-style: none;
     padding: 5px 8px;
     margin: 4px 4px;
-    font-size: 13px;
     border: 1px solid #355462;
+}
+
+.profile_all .timeline-left .intro_box .skills .skills_item .skill_item,
+.profile_all .timeline-left .intro_box .hobbies .skills_item .skill_item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    height: 100%;
 }
 
 .profile_all .timeline-left .intro_box .hobbies .skills_item {
@@ -897,16 +901,22 @@ body {
         display: block;
     }
 
+
     .profile_all .timeline-left .intro_box .hobbies .skills_item {
-        padding: 8px 10px 9px 29px;
+        padding: 9px 10px 8px 29px;
         position: relative;
         margin: 4px 6px 4px 0px;
         display: none;
     }
 
+    .profile_all .timeline-left .intro_box .skills .skills_item .skill_item,
+    .profile_all .timeline-left .intro_box .hobbies .skills_item .skill_item {
+        font-size: 12px;
+    }
+
     .profile_all .timeline-left .intro_box .hobbies .loadMorehobbies {
         background: #252d31;
-        padding: 9px 11px 7px;
+        padding: 9px 10px 3px 10px;
         line-height: 1;
         transform: scale(1);
     }
