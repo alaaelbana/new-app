@@ -1217,7 +1217,7 @@ img {
 .post .comments .coment_box {
     padding: 10px;
     background: #252525;
-    border-radius: 13px;
+    border-radius: 8px;
 }
 
 .post .comments .coment_box .user_name {
@@ -1651,6 +1651,10 @@ img {
         position: relative;
     }
 
+    .post .post_bg {
+        padding-top: 8px;
+    }
+
     .post .post-content .reactions_num {
         display: none;
     }
@@ -1665,6 +1669,10 @@ img {
         border-bottom: 1px solid var(--border-color);
     }
 
+    .post .post-text p {
+        padding: 5px 15px 10px;
+    }
+
     .post .what-do-user-name {
         padding: 0px 6px 10px;
     }
@@ -1674,13 +1682,44 @@ img {
         height: auto;
     }
 
-    .post .comments {
-        padding: 5px 10px 0px;
+    .post .comments .comment_box .comment {
+        padding: 5px 0px 0px 8px;
+    }
+
+    .post .comments .comment_box:last-child .comment {
+        padding: 5px 0px 10px 8px;
     }
 
     .post .comments .reply_box .reply .comments {
         padding: 0px;
+    }
 
+    .post-userName .post-userName1 {
+        margin-left: 66px;
+    }
+
+    .post-userName .post-userName1 .post-user-box {
+        padding: 10px 15px 9px 10px;
+    }
+
+    .post-userName .post-userName1 .profile_pic {
+        padding: 2px 11px 5px 5px;
+    }
+
+    .post-userName .post-userName1 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .center-padding .what-do .what-do-user-name img, .post .what-do-user-name img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .post .comments .comment_profile_pic {
+        width: 40px;
+        height: 40px;
+        margin-top: 3px;
     }
 
     .post .comments .comment_reply {
