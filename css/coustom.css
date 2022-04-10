@@ -1648,11 +1648,19 @@ img {
         width: 0px !important;
     }
 
-    .reactions {
-        padding: 15px 3px;
+    .post .reactions {
+        padding: 8px 3px;
         bottom: 0;
         opacity: 1;
         position: relative;
+    }
+
+    .post.just_text .reactions {
+        padding: 8px 3px;
+    }
+
+    .post .reactions.reaction_pading {
+        padding: 15px 3px;
     }
 
     .post .post_bg {

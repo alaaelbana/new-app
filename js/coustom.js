@@ -165,6 +165,7 @@ $(".post .post-content .reactions_num .heart-button").click(function () {
     }
 });
 $('.reactions .reactions_box.comment_btn').click(function () {
+    $(this).parent().addClass('reaction_pading');
     $(this).parent().parent().parent().find('.write_comment').show();
     $(this).parent().parent().parent().find('.write_comment .what-do-user-name input').focus();
     $(this).parent().parent().parent().find('>.comments').show();
