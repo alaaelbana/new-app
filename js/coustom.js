@@ -169,14 +169,15 @@ $('.reactions .reactions_box.comment_btn').click(function () {
     $(this).parent().parent().parent().find('.write_comment .what-do-user-name input').focus();
     $(this).parent().parent().parent().find('>.comments').show();
     $(this).parent().parent().parent().find('>.comments .comment_box:first-child').show();
+    if ($(this).parent().parent().parent().find('>.comments>.comment_box:hidden').length > 0) {
+        $(this).parent().parent().parent().find('.show_more_comments').show();
+    }
 });
 $('.post .comments .reply_box .reply_reactions .reply_btn').click(function () {
     $(this).parent().parent().find('.reply .write_reply').show();
     $(this).parent().parent().find('.reply .write_reply .what-do-user-name input').focus();
     $(this).parent().parent().find('.comments').show();
     $(this).parent().parent().find('.comments .comment_box:first-child').show();
-
-
     if ($(this).parent().parent().find('.comments .comment_box:hidden').length > 0) {
         $(this).parent().parent().find('.reply .show_more_replys').show();
     }
@@ -184,6 +185,12 @@ $('.post .comments .reply_box .reply_reactions .reply_btn').click(function () {
 $('.post .comments .reply_box .reply .show_more_replys').click(function () {
     $(this).parent().find('.comments .comment_box:hidden').slice(0, 5).show();
     if ($(this).parent().find('.comments .comment_box:hidden').length == 0) {
+        $(this).hide();
+    }
+});
+$('.post .show_more_comments').click(function () {
+    $(this).parent().find('>.comments>.comment_box:hidden').slice(0, 5).show();
+    if ($(this).parent().find('>.comments>.comment_box:hidden').length == 0) {
         $(this).hide();
     }
 });
