@@ -1652,7 +1652,7 @@ img {
     }
 
     .post .post_bg {
-        padding-top: 8px;
+        border-radius: 0px;
     }
 
     .post .post-content .reactions_num {
@@ -1670,7 +1670,7 @@ img {
     }
 
     .post .post-text p {
-        padding: 5px 15px 10px;
+        padding: 10px 15px 10px;
     }
 
     .post .what-do-user-name {
@@ -1682,12 +1682,28 @@ img {
         height: auto;
     }
 
+    .post .comments .reply_box .reply .comments .comment_reply {
+        padding-inline-end: 0;
+    }
+
+    .post .comments .reply_box .reply .comments .comment_reply .coment_box .coment {
+        padding: 0;
+    }
+
     .post .comments .comment_box .comment {
         padding: 5px 0px 0px 8px;
     }
 
     .post .comments .comment_box:last-child .comment {
         padding: 5px 0px 10px 8px;
+    }
+
+    .post .comments .reply_box {
+        padding: 0px;
+    }
+
+    .post .comments .reply_box .reply_reactions {
+        padding: 0 5px;
     }
 
     .post .comments .reply_box .reply .comments {
