@@ -21,13 +21,26 @@ $(document).ready(function () {
     async function end() {
         screen.orientation.unlock()
     }
+    var fullscreentest = 0
     $('.plyr__controls>.plyr__control:last-child').click(function () {
-        start();
+        if (fullscreentest == 0) {
+            start();
+            fullscreentest = 1
+        } else {
+            end();
+            fullscreentest = 0
+        }
     });
     $(".plyr__poster").dblclick(function () {
         setTimeout(() => {
-            start();
-        }, 50);
+            if (fullscreentest == 0) {
+                start();
+                fullscreentest = 1
+            } else {
+                end();
+                fullscreentest = 0
+            }
+        }, 100);
     });
 
     if (document.addEventListener) {
@@ -40,6 +53,7 @@ $(document).ready(function () {
     function exitHandler() {
         if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
             end();
+            fullscreentest = 0
         }
     }
 });
