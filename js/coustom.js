@@ -17,7 +17,6 @@ $(document).ready(function () {
         if (document.body.offsetWidth < 770) {
             await screen.orientation.lock("landscape");
         }
-        console.log("hi")
     }
     async function end() {
         screen.orientation.unlock()
@@ -67,8 +66,6 @@ $(document).ready(function () {
                 end();
                 fullscreentest = 0
             }, 25);
-            console.log("bye")
-
         }
     }
 });

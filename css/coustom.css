@@ -665,7 +665,7 @@ img {
     padding: 30px 25px 35px;
     margin-bottom: 25px;
     position: fixed;
-    width: calc(100% - 785px);
+    width: calc(100% - 780px);
     z-index: 99;
     display: none;
 }

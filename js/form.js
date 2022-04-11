@@ -41,7 +41,9 @@ function paint() {
 	if (currentFocus) {
 
 		// Add to the tail
-		tail.push({ ...head });
+		tail.push({
+			...head
+		});
 		if (tail.length > TAIL_LENGTH) tail.shift();
 
 		// Paint the tail
@@ -129,12 +131,3 @@ window.addEventListener('scroll', () => {
 });
 
 // ***************************************
-
-
-
-
-
-$(document).ready(function () {
-	$('.form-container').addClass("d-none")
-});
-
