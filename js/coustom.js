@@ -17,6 +17,7 @@ $(document).ready(function () {
         if (document.body.offsetWidth < 770) {
             await screen.orientation.lock("landscape");
         }
+        console.log("hi")
     }
     async function end() {
         screen.orientation.unlock()
@@ -40,7 +41,7 @@ $(document).ready(function () {
                 end();
                 fullscreentest = 0
             }
-        }, 100);
+        }, 10);
     });
 
     if (document.addEventListener) {
@@ -52,8 +53,12 @@ $(document).ready(function () {
 
     function exitHandler() {
         if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-            end();
-            fullscreentest = 0
+            setTimeout(() => {
+                end();
+                fullscreentest = 0
+            }, 25);
+            console.log("bye")
+
         }
     }
 });
