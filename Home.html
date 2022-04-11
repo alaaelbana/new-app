@@ -2200,7 +2200,6 @@
                                 Show More Replys
                             </div>
                         </div>
-
                         <div class="post">
                             <div class="post-userName">
                                 <div class="post-userName1">
@@ -2482,7 +2481,6 @@
                                 Show More Replys
                             </div>
                         </div>
-
                         <div class="post">
                             <div class="post-userName">
                                 <div class="post-userName1">
@@ -2764,7 +2762,6 @@
                                 Show More Replys
                             </div>
                         </div>
-                        
                         <div class="post">
                             <div class="post-userName">
                                 <div class="post-userName1">
@@ -3262,12 +3259,20 @@
     <script src="js/photoswipe.min.js"></script>
     <script src="js/photoswipe-ui-default.min.js"></script>
     <script src='js/plyr.js'></script>
+    <script src="js/infinite-scroll.pkgd.min.js"></script>
     <script src="js/coustom.js"></script>
     <script>
         const toggleButton = document.querySelector('.dark-light');
 
         toggleButton.addEventListener('click', () => {
             document.body.classList.toggle('light-mode');
+        });
+        $('.center-padding').infiniteScroll({
+            // options
+            // path: '.pagination__next',
+            // append: '.post',
+            // history: false,
+            path: '.profile.html'
         });
     </script>
 </body>
