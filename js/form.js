@@ -131,3 +131,25 @@ window.addEventListener('scroll', () => {
 });
 
 // ***************************************
+
+$("#signUp ,#signUpmedia").click(function () {
+	$("#container").addClass("right-panel-active");
+	$(".canvas_box").addClass("canvas_box_move");
+	$("#input_name").focus()
+});
+$("#signIn ,#signInmedia").click(function () {
+	$("#container").removeClass("right-panel-active");
+	$(".canvas_box").removeClass("canvas_box_move");
+	$("#input_email").focus()
+});
+
+$(".next_info").click(function (e) {
+	e.preventDefault();
+	$(this).parent().parent().parent().addClass(["more_info_hide"]);
+	$("#input_address").focus()
+});
+$(".last_info").click(function (e) {
+	e.preventDefault();
+	$(this).parent().parent().parent().siblings().removeClass(["more_info_hide"]);
+	$("#input_name").focus()
+});
