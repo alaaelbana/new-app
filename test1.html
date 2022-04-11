@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111" />
+
+
+    <title>CodePen - React Routing Example</title>
+
+
+
+
+    <style>
+        body {
+            background-color: #FFCC00;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        ul.header li {
+            display: inline;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        ul.header {
+            background-color: #111;
+            padding: 0;
+        }
+
+        ul.header li a {
+            color: #FFF;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .content {
+            background-color: #FFF;
+            padding: 20px;
+        }
+
+        .content h2 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .active {
+            background-color: #0099FF;
+        }
+    </style>
+
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+    </div>
+
+    <script type="text/babel">
+
+    </script>
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js'></script>
+    <script src='https://npmcdn.com/react-router@3.0.2/umd/ReactRouter.min.js'></script>
+    <script id="rendered-js">
+        var { Router,
+            Route,
+            IndexRoute,
+            IndexLink,
+            hashHistory,
+            Link } = ReactRouter;
+        var destination = document.querySelector("#container");
+        var Home = React.createClass({
+            displayName: "Home",
+            render: function () {
+                return /*#__PURE__*/(
+                    React.createElement("div", null, /*#__PURE__*/
+                        React.createElement("h2", null, "HELLO"), /*#__PURE__*/
+                        React.createElement("p", null, "Cras facilisis urna ornare ex volutpat, et convallis erat elementum. Ut aliquam, ipsum vitae gravida suscipit, metus dui bibendum est, eget rhoncus nibh metus nec massa. Maecenas hendrerit laoreet augue nec molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."), /*#__PURE__*/
+
+
+
+
+
+
+                        React.createElement("p", null, "Duis a turpis sed lacus dapibus elementum sed eu lectus.")));
+
+
+            }
+        });
+
+        var Contact = React.createClass({
+            displayName: "Contact",
+            render: function () {
+                return /*#__PURE__*/(
+                    React.createElement("div", null, /*#__PURE__*/
+                        React.createElement("h2", null, "GOT QUESTIONS?"), /*#__PURE__*/
+                        React.createElement("p", null, "The easiest thing to do is post on our ", /*#__PURE__*/
+                            React.createElement("a", { href: "http://forum.kirupa.com" }, "forums"), ".")));
+
+
+
+            }
+        });
+
+
+        var Stuff = React.createClass({
+            displayName: "Stuff",
+            render: function () {
+                return /*#__PURE__*/(
+                    React.createElement("div", null, /*#__PURE__*/
+                        React.createElement("h2", null, "STUFF"), /*#__PURE__*/
+                        React.createElement("p", null, "Mauris sem velit, vehicula eget sodales vitae, rhoncus eget sapien:"), /*#__PURE__*/
+
+                        React.createElement("ol", null, /*#__PURE__*/
+                            React.createElement("li", null, "Nulla pulvinar diam"), /*#__PURE__*/
+                            React.createElement("li", null, "Facilisis bibendum"), /*#__PURE__*/
+                            React.createElement("li", null, "Vestibulum vulputate"), /*#__PURE__*/
+                            React.createElement("li", null, "Eget erat"), /*#__PURE__*/
+                            React.createElement("li", null, "Id porttitor"))));
+
+
+
+            }
+        });
+
+        var App = React.createClass({
+            displayName: "App",
+            render: function () {
+                return /*#__PURE__*/(
+                    React.createElement("div", null, /*#__PURE__*/
+                        React.createElement("h1", null, "Simple SPA"), /*#__PURE__*/
+                        React.createElement("ul", { className: "header" }, /*#__PURE__*/
+                            React.createElement("li", null, /*#__PURE__*/React.createElement(IndexLink, { to: "/", activeClassName: "active" }, "Home")), /*#__PURE__*/
+                            React.createElement("li", null, /*#__PURE__*/React.createElement(Link, { to: "/stuff", activeClassName: "active" }, "Stuff")), /*#__PURE__*/
+                            React.createElement("li", null, /*#__PURE__*/React.createElement(Link, { to: "/contact", activeClassName: "active" }, "Contact"))), /*#__PURE__*/
+
+                        React.createElement("div", { className: "content" },
+
+                            this.props.children)));
+
+
+
+            }
+        });
+
+        ReactDOM.render( /*#__PURE__*/
+            React.createElement(Router, { history: hashHistory }, /*#__PURE__*/
+                React.createElement(Route, { path: "/", component: App }, /*#__PURE__*/
+                    React.createElement(IndexRoute, { component: Home }), /*#__PURE__*/
+                    React.createElement(Route, { path: "stuff", component: Stuff }), /*#__PURE__*/
+                    React.createElement(Route, { path: "contact", component: Contact }))),
+
+
+            destination);
+//# sourceURL=pen.js
+    </script>
+
+
+
+</body>
+
+</html>
