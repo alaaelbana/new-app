@@ -31,6 +31,17 @@ $(document).ready(function () {
             fullscreentest = 0
         }
     });
+    $(".plyr__poster").dblclick(function () {
+        setTimeout(() => {
+            if (fullscreentest == 0) {
+                start();
+                fullscreentest = 1
+            } else {
+                end();
+                fullscreentest = 0
+            }
+        }, 100);
+    });
 
     if (document.addEventListener) {
         document.addEventListener('fullscreenchange', exitHandler, false);
@@ -325,14 +336,14 @@ $('.post_img:nth-child(2)').click(function () {
         $(".pswp__button--arrow--right").click()
     }, 1);
 });
-$('.post_img:nth-child(3)').click(function () {
-    setTimeout(() => {
-        $(".pswp__button--arrow--right").click()
-        setTimeout(() => {
-            $(".pswp__button--arrow--right").click()
-        }, 30);
-    }, 1);
-});
+// $('.post_img:nth-child(3)').click(function () {
+//     setTimeout(() => {
+//         $(".pswp__button--arrow--right").click()
+//         setTimeout(() => {
+//             $(".pswp__button--arrow--right").click()
+//         }, 30);
+//     }, 1);
+// });
 
 var openPhotoSwipe = function () {
     var pswpElement = document.querySelectorAll('.pswp')[0];
