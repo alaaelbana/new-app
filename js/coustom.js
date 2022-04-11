@@ -43,7 +43,17 @@ $(document).ready(function () {
             }
         }, 10);
     });
-
+    $(".plyr__control--overlaid").dblclick(function () {
+        setTimeout(() => {
+            if (fullscreentest == 0) {
+                start();
+                fullscreentest = 1
+            } else {
+                end();
+                fullscreentest = 0
+            }
+        }, 10);
+    });
     if (document.addEventListener) {
         document.addEventListener('fullscreenchange', exitHandler, false);
         document.addEventListener('mozfullscreenchange', exitHandler, false);
