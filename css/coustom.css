@@ -27,11 +27,16 @@ li {
 :root {
     --theme-bg-color: #181818;
     --nav-bg-color: #202020;
-    --content-bg-color: #202020;
-    --border-color: rgba(113 119 144 / 25%);
     --theme-color: #f9fafb;
-
-
+    --content-bg-color: #202020;
+    --input-bg-color: #252525;
+    --border-color: rgba(113 119 144 / 25%);
+    --theme-second-color: #ddd;
+    --search-bg: #3a3b3c;
+    --just_text-reactions-bg: rgba(46, 48, 51, 0.302);
+    --just_text-reactions-bg-hover: rgba(47, 48, 50, 0.973);
+    --job-h4-color: #c4c4c4;
+    --box-shadow-color: none;
 
 
     --inactive-color: #808081;
@@ -43,24 +48,30 @@ li {
     --dropdown-bg: #21242d;
     --dropdown-hover: rgb(42 46 60);
     --popup-bg: rgb(22 25 37);
-    --search-bg: #3a3b3c;
     --overlay-bg: rgba(36, 39, 59, 0.3);
     --scrollbar-bg: rgb(1 2 3 / 40%);
 }
 
 .light-mode {
-    --theme-bg-color: #ffffff;
+    --theme-bg-color: #f2f2f2;
     --nav-bg-color: #ffff;
     --theme-color: #3c3a3a;
     --content-bg-color: #ffffff;
+    --input-bg-color: #f0f0f0;
+    --border-color: #f2f2f2;
+    --theme-second-color: #333;
+    --search-bg: #e5e5e5;
+    --just_text-reactions-bg: #f6f6f6;
+    --just_text-reactions-bg-hover: #f2f2f2;
+    --job-h4-color: #676767;
+    --box-shadow-color: 0px 0px 4px -2px #c4c4c4;
+
 
     --inactive-color: #333333;
     --button-inactive: #3c3a3a;
-    --search-bg: #ffffff;
     --dropdown-bg: #f7f7f7;
     --overlay-bg: rgb(255 255 255 / 30%);
     --dropdown-hover: rgb(236 236 236);
-    --border-color: rgb(255 255 255 / 35%);
     --popup-bg: rgb(255 255 255);
     --hover-menu-bg: rgba(255 255 255 / 35%);
     --scrollbar-bg: rgb(255 253 253 / 57%);
@@ -178,6 +189,7 @@ img {
     white-space: nowrap;
     background-color: var(--nav-bg-color);
     justify-content: space-between;
+    box-shadow: var(--box-shadow-color);
 }
 
 @media screen and (max-width: 480px) {
@@ -261,7 +273,7 @@ img {
     width: 100%;
     height: 100%;
     border: none;
-    background-color: var(--search-bg);
+    background-color: var(--input-bg-color);
     border-radius: 4px;
     font-family: var(--body-font);
     font-size: 15px;
@@ -410,6 +422,7 @@ img {
 .right-side .side-wrapper {
     padding: 15px;
     background-color: var(--content-bg-color);
+    box-shadow: var(--box-shadow-color);
     border-radius: 8px;
 }
 
@@ -428,7 +441,7 @@ img {
     flex-wrap: wrap;
     border-bottom: 1px solid var(--border-color);
     border-radius: 0;
-    color: #ddd;
+    color: var(--theme-second-color);
 }
 
 .right-side .side-menu a:last-child {
@@ -473,7 +486,7 @@ img {
 }
 
 .side-menu a:hover {
-    background-color: #28292a;
+    background-color: var(--input-bg-color);
 }
 
 .side-menu svg {
@@ -659,8 +672,9 @@ img {
     flex-grow: 1;
 }
 
-.jox_box {
-    background-color: #202020;
+.job_box {
+    background-color: var(--content-bg-color);
+    box-shadow: var(--box-shadow-color);
     border-radius: 8px;
     padding: 30px 25px 35px;
     margin-bottom: 25px;
@@ -670,7 +684,7 @@ img {
     display: none;
 }
 
-.jox_box .company_logo .job_logo {
+.job_box .company_logo .job_logo {
     right: 30px;
     position: absolute;
     top: 20px;
@@ -678,57 +692,57 @@ img {
     border-radius: 14px;
 }
 
-.jox_box h1 {
+.job_box h1 {
     margin: 0;
     font-size: 28px;
     color: #4284e4;
     max-width: 80%;
 }
 
-.jox_box h3 {
+.job_box h3 {
     font-size: 18px;
     margin: 30px 0 10px;
     border-left: 1px solid #4284e4;
     padding: 3px 7px;
 }
 
-.jox_box h4 {
+.job_box h4 {
     font-size: 14px;
     margin: 5px 0px 0px;
-    color: #c4c4c4;
+    color: var(--job-h4-color);
 }
 
-.jox_box h4 i {
+.job_box h4 i {
     font-size: 13px;
     margin-right: 3px;
 }
 
-.jox_box h4 span {
+.job_box h4 span {
     color: rgb(139 139 139);
     margin-left: 5px;
 
 }
 
-.jox_box ul li {
+.job_box ul li {
     margin-bottom: 2px;
 }
 
-.jox_box ul li i {
+.job_box ul li i {
     font-size: 13px;
     margin-right: 3px;
 }
 
-.jox_box ul li svg {
+.job_box ul li svg {
     font-size: 13px;
     margin-right: 3px;
 }
 
-.jox_box p {
+.job_box p {
     padding: 0 10px;
     line-height: 1.4;
 }
 
-.jox_box .job_skills {
+.job_box .job_skills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -736,8 +750,8 @@ img {
     padding: 0;
 }
 
-.jox_box .job_skills li {
-    color: #f9fafb;
+.job_box .job_skills li {
+    color: var(--theme-color);
     padding: 5px 9px;
     border-radius: 9px;
     border-bottom: 1px solid #3d5ba8;
@@ -771,6 +785,7 @@ img {
     border-radius: 8px;
     padding: 15px 20px 10px;
     margin: 0 30px 20px;
+    box-shadow: var(--box-shadow-color);
 }
 
 .center-padding .what-do .what-do-user-name, .post .what-do-user-name {
@@ -803,7 +818,7 @@ img {
     width: 100%;
     padding: 12px;
     border-radius: 8px;
-    background-color: #252525;
+    background-color: var(--input-bg-color);
     border: none;
     font-size: 15px;
     outline: none;
@@ -812,12 +827,12 @@ img {
 }
 
 .center-padding .what-do .what-do-user-name input:hover {
-    background-color: #3a3b3c;
+    background-color: var(--search-bg);
 }
 
 .center-padding .what-do hr {
     border: none;
-    border-top: 1px solid #3a3b3c;
+    border-top: 1px solid var(--search-bg);
     margin: 12px 0;
 }
 
@@ -844,7 +859,7 @@ img {
 }
 
 .what-do-links div:hover {
-    background-color: #3a3b3c;
+    background-color: var(--search-bg);
 }
 
 
@@ -973,7 +988,7 @@ img {
 .post-content .post_img_box .seemore p {
     text-shadow: 1px 1px 0px #000;
     font-size: 22px;
-    color: var(--theme-color);
+    color: #f9fafb;
 }
 
 .post .post-content img {
@@ -1075,7 +1090,11 @@ img {
 
 .post .post-content .reactions_num .reactions_box span {
     padding: 0 5px;
-    color: #fff;
+    color: #f9fafb;
+}
+
+.post .post-content .reactions_num .reactions_box i {
+    color: #f9fafb;
 }
 
 .post-statistics {
@@ -1120,6 +1139,7 @@ img {
     opacity: 0;
     bottom: -25px;
     padding: 8px 3px;
+    transition: .4s;
 }
 
 .post .post_bg:hover .reactions {
@@ -1148,8 +1168,12 @@ img {
     background: #2f3032;
 }
 
+.reactions .reactions_box i {
+    color: #f9fafb;
+}
+
 .reactions .reactions_box span {
-    color: #fff;
+    color: #f9fafb;
 }
 
 .reactions .reactions_box span span {
@@ -1174,7 +1198,7 @@ img {
     bottom: 0;
     opacity: 1;
     padding: 8px 3px;
-
+    transition: 0s;
 }
 
 .post.just_text .reactions.reaction_pading {
@@ -1183,13 +1207,21 @@ img {
 
 .post.just_text .reactions .reactions_box {
     box-shadow: none;
-    background: rgba(47, 48, 50, 0.302);
+    background: var(--just_text-reactions-bg);
     border: none;
 }
 
-.post.just_text .reactions .reactions_box:hover {
-    background: rgba(47, 48, 50, 0.973);
+.post.just_text .reactions .reactions_box.active span {
+    color: #f9fafb;
+}
 
+.post.just_text .reactions .reactions_box:hover {
+    background: var(--just_text-reactions-bg-hover);
+}
+
+.post.just_text .reactions .reactions_box span,
+.post.just_text .reactions .reactions_box i {
+    color: var(--theme-color);
 }
 
 .post .comments {
@@ -1204,7 +1236,7 @@ img {
     padding: 5px 15px 0px;
     display: flex;
     gap: 10px;
-    background: #202020;
+    background: var(--content-bg-color);
 }
 
 .post .comments .comment_box:last-child .comment {
@@ -1220,7 +1252,7 @@ img {
 
 .post .comments .coment_box {
     padding: 10px;
-    background: #252525;
+    background: var(--input-bg-color);
     border-radius: 8px;
 }
 
@@ -1255,7 +1287,7 @@ img {
 .post .comments .reply_box button {
     background: transparent;
     border: none;
-    color: #ddd;
+    color: var(--theme-second-color);
     font-family: "Tajawal";
     font-weight: 700;
     font-size: 14px;
@@ -1265,7 +1297,7 @@ img {
 }
 
 .post .comments .reply_box span {
-    color: #ddd;
+    color: var(--theme-second-color);
     font-weight: 500;
     font-size: 12px;
 }
@@ -1316,16 +1348,16 @@ img {
 .post .comments .reply_box .reply .show_more_replys {
     font-size: 13px;
     padding: 4px 50px 10px;
-    color: #ddd;
+    color: var(--theme-second-color);
     cursor: pointer;
     display: none;
 }
 
 .post .show_more_comments {
     border-radius: 0px 0px 8px 8px;
-    background: #202020;
+    background: var(--content-bg-color);
     padding: 5px 15px 15px;
-    color: #ddd;
+    color: var(--theme-second-color);
     cursor: pointer;
     display: none;
 }
@@ -1443,9 +1475,7 @@ img {
     margin: auto;
 }
 
-.plyr__captions {
-    display: none !important;
-}
+
 
 .plyr__controls {
     opacity: 0;
@@ -1603,7 +1633,7 @@ img {
         margin: 0 300px 0 0px;
     }
 
-    .jox_box {
+    .job_box {
         width: calc(100% - 600px);
     }
 
@@ -1657,6 +1687,7 @@ img {
         bottom: 0;
         opacity: 1;
         position: relative;
+        transition: 0s;
     }
 
     .post.just_text .reactions {

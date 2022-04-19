@@ -1,10 +1,10 @@
 $(document).ready(function () {
-
     $(".loading").addClass("d-none")
     const players = Plyr.setup('.player', {
         seekTime: 5,
         autopause: true
     });
+
     $('.plyr__control--overlaid').click(function () {
         $(this).parent().find(".plyr__controls>button:first-child").focus();
     });
@@ -227,18 +227,18 @@ $('.menu-items .profile-menu-link').click(function (e) {
 });
 
 $(".job_link").mouseenter(function () {
-    $(".jox_box").fadeIn();
-    $(".jox_box h1").text($(this).find("p").text());
+    $(".job_box").fadeIn();
+    $(".job_box h1").text($(this).find("p").text());
 
 });
 $(".job_link").mouseleave(function () {
-    $(".jox_box").hide();
+    $(".job_box").hide();
 });
-$(".jox_box").mouseenter(function () {
-    $(".jox_box").hide();
+$(".job_box").mouseenter(function () {
+    $(".job_box").hide();
 });
 $(".right-side").mouseenter(function () {
-    $(".jox_box").hide();
+    $(".job_box").hide();
 });
 
 
